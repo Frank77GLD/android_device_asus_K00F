@@ -19,7 +19,7 @@ ARCH_ARM_HAVE_VFP := true
 
 #origineel hier onder:
 #BOARD_KERNEL_CMDLINE := 
-BOARD_KERNEL_CMDLINE := ttyFIQ0 androidboot.console=ttyFIQ0 init=/init initrd=0x62000000,0x00800000
+BOARD_KERNEL_CMDLINE := console=ttyFIQ0 androidboot.console=ttyFIQ0 init=/init initrd=0x62000000,0x00800000
 BOARD_KERNEL_BASE := 0x60400000
 #BOARD_KERNEL_PAGESIZE := 4096
 #Origineel:
