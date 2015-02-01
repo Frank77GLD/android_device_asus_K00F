@@ -242,13 +242,13 @@ web_browsing.sh
 wifi
 
 #./etc/bluetooth:
-auto_pair_devlist.conf
-bt_did.conf
-bt_stack.conf
+etc/auto_pair_devlist.conf
+etc/bt_did.conf
+etc/bt_stack.conf
 
 #./etc/dhcpcd:
 etc/dhcpcd/dhcpcd.conf
-etc/dhcpcd-run-hooks
+etc/dhcpcd/dhcpcd-run-hooks
 
 #./etc/dhcpcd/dhcpcd-hooks:
 20-dns.conf
