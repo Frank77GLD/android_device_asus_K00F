@@ -732,7 +732,7 @@ fonts/AdobeFonts/hyphenDicts/hyph_it.dic
 fonts/AdobeFonts/hyphenDicts/hyph_pt.dic
 
 #./framework/:
-#Removed *.odex files. Not needed in CM.
+#Removed *.odex files. Not needed in CM. CM will make most framework files.
 #am.jar
 #android.policy.jar
 #android.test.runner.jar
@@ -741,7 +741,7 @@ fonts/AdobeFonts/hyphenDicts/hyph_pt.dic
 #bmgr.jar
 #bouncycastle.jar
 #bu.jar
-#com.android.future.usb.accessory.jar
+##com.android.future.usb.accessory.jar
 #com.android.location.provider.jar
 #com.google.android.maps.jar
 #com.google.android.media.effects.jar
@@ -760,25 +760,25 @@ fonts/AdobeFonts/hyphenDicts/hyph_pt.dic
 #monkey.jar
 #pm.jar
 #requestsync.jar
-#send_bug.jar
+##send_bug.jar
 #services.jar
 #settings.jar
 #svc.jar
 #telephony-common.jar
 #uiautomator.jar
 
-#./lib:
-crtbegin_so.o
-crtend_so.o
+#./lib/:
+lib/crtbegin_so.o
+lib/crtend_so.o
 libAndroidExport.so
 libAppDataSearch.so
 libCxImageKRF.so
 libEGL.so
 libETC1.so
 libFFTEm.so
-libGLES_trace.so
-libGLESv1_CM.so
-libGLESv2.so
+lib/libGLES_trace.so
+lib/libGLESv1_CM.so
+lib/libGLESv2.so
 libImageEffects.so
 libKRF.so
 libKindleReaderJNI.so
@@ -798,8 +798,8 @@ libTfoWrite.so
 libUMP.so
 libWVphoneAPI.so
 libandroid.so
-libandroid_runtime.so
-libandroid_servers.so
+#libandroid_runtime.so
+#libandroid_servers.so
 libandroidfw.so
 libapedec.so
 libarcsoft_panorama_burstcapture.so
@@ -1058,10 +1058,10 @@ libwpa_client.so
 libyuvtorgb.so
 libz.so
 
-#./lib/drm:
-#in cm libfwdlockengine.so
+#./lib/drm/:
+#in cm lib/drm/libfwdlockengine.so
 
-#./lib/egl:
+#./lib/egl/:
 egl.cfg
 libEGL_mali.so
 #libGLES_android.so
