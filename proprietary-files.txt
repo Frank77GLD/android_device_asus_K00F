@@ -248,6 +248,7 @@ bt_stack.conf
 
 #./etc/dhcpcd:
 etc/dhcpcd/dhcpcd.conf
+etc/dhcpcd-run-hooks
 
 #./etc/dhcpcd/dhcpcd-hooks:
 20-dns.conf
