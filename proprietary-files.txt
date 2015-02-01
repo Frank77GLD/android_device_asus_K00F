@@ -654,10 +654,10 @@ etc/updatecmds/google_generic_update.txt
 6000_1000
 8888_6500
 
-#./etc/wifi:
+#./etc/wifi/:
 etc/wifi/wpa_supplicant.conf
 
-#./fonts:
+#./fonts/:
 AdobeFonts
 AndroidClock.ttf
 AndroidClock_Highlight.ttf
@@ -704,34 +704,34 @@ RobotoCondensed-Italic.ttf
 RobotoCondensed-Regular.ttf
 hkgcsh00d.ttf
 
-#./fonts/AdobeFonts/fonts:
-AdobeHeitiStd-Regular.otf
-AdobeMingStd-Light.otf
-AdobeMyungjoStd-Medium.otf
-CourierStd-Bold.otf
-CourierStd-BoldOblique.otf
-CourierStd-Oblique.otf
-CourierStd.otf
-MinionPro-Bold.otf
-MinionPro-BoldIt.otf
-MinionPro-It.otf
-MinionPro-Regular.otf
-MyriadPro-Bold.otf
-MyriadPro-BoldIt.otf
-MyriadPro-It.otf
-MyriadPro-Regular.otf
-RyoGothicPlusN-Medium.otf
-SymbolStd.otf
+#./fonts/AdobeFonts/fonts/:
+fonts/AdobeFonts/fonts/AdobeHeitiStd-Regular.otf
+fonts/AdobeFonts/fonts/AdobeMingStd-Light.otf
+fonts/AdobeFonts/fonts/AdobeMyungjoStd-Medium.otf
+fonts/AdobeFonts/fonts/CourierStd-Bold.otf
+fonts/AdobeFonts/fonts/CourierStd-BoldOblique.otf
+fonts/AdobeFonts/fonts/CourierStd-Oblique.otf
+fonts/AdobeFonts/fonts/CourierStd.otf
+fonts/AdobeFonts/fonts/MinionPro-Bold.otf
+fonts/AdobeFonts/fonts/MinionPro-BoldIt.otf
+fonts/AdobeFonts/fonts/MinionPro-It.otf
+fonts/AdobeFonts/fonts/MinionPro-Regular.otf
+fonts/AdobeFonts/fonts/MyriadPro-Bold.otf
+fonts/AdobeFonts/fonts/MyriadPro-BoldIt.otf
+fonts/AdobeFonts/fonts/MyriadPro-It.otf
+fonts/AdobeFonts/fonts/MyriadPro-Regular.otf
+fonts/AdobeFonts/fonts/RyoGothicPlusN-Medium.otf
+fonts/AdobeFonts/fonts/SymbolStd.otf
 
-#./fonts/AdobeFonts/hyphenDicts:
-hyph_de.dic
-hyph_en.dic
-hyph_es.dic
-hyph_fr.dic
-hyph_it.dic
-hyph_pt.dic
+#./fonts/AdobeFonts/hyphenDicts/:
+fonts/AdobeFonts/hyphenDicts/hyph_de.dic
+fonts/AdobeFonts/hyphenDicts/hyph_en.dic
+fonts/AdobeFonts/hyphenDicts/hyph_es.dic
+fonts/AdobeFonts/hyphenDicts/hyph_fr.dic
+fonts/AdobeFonts/hyphenDicts/hyph_it.dic
+fonts/AdobeFonts/hyphenDicts/hyph_pt.dic
 
-#./framework:
+#./framework/:
 #Removed *.odex files. Not needed in CM.
 #am.jar
 #android.policy.jar
