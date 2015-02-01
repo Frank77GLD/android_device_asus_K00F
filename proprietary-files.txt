@@ -330,37 +330,38 @@ etc/firmware/Splendid/LUT/LUT_W10.txt
 etc/firmware/rtlbt/rtlbt_config
 etc/firmware/rtlbt/rtlbt_fw
 
-#./etc/permissions:
-android.hardware.location.gps.xml
-android.hardware.location.xml
-android.hardware.sensor.compass.xml
-android.hardware.wifi.direct.xml
-android.software.live_wallpaper.xml
-asus.hardware.sound.maxxaudio.xml
-com.android.location.provider.xml
-com.asus.ui.xml
-com.google.android.maps.xml
-com.google.android.media.effects.xml
-com.google.widevine.software.drm.xml
-platform.xml
-rk-camera-front.xml
-rk-camera.xml
-rk-core.xml
+#./etc/permissions/:
+etc/permissions/android.hardware.location.gps.xml
+etc/permissions/android.hardware.location.xml
+etc/permissions/android.hardware.sensor.compass.xml
+etc/permissions/android.hardware.wifi.direct.xml
+etc/permissions/android.software.live_wallpaper.xml
+etc/permissions/asus.hardware.sound.maxxaudio.xml
+etc/permissions/com.android.location.provider.xml
+etc/permissions/com.asus.ui.xml
+#etc/permissions/com.google.android.maps.xml
+etc/permissions/com.google.android.media.effects.xml
+#etc/permissions/com.google.widevine.software.drm.xml
+#platform.xml
+etc/permissions/rk-camera-front.xml
+etc/permissions/rk-camera.xml
+etc/permissions/rk-core.xml
 
-#./etc/ppp:
-call-pppd
-ip-down
-ip-up
-ip-up-vpn
+#./etc/ppp/:
+etc/ppp/call-pppd
+etc/ppp/ip-down
+etc/ppp/ip-up
+etc/ppp/ip-up-vpn
 
-#./etc/security:
-cacerts
-otacerts.zip
+#./etc/security/:
+etc/security/cacerts
+etc/security/otacerts.zip
 
-#./etc/security/cacerts:
-#CM will makte them
-./etc/updatecmds:
-google_generic_update.txt
+#./etc/security/cacert/s:
+#CM will make certs.
+
+./etc/updatecmds/:
+etc/updatecmds/google_generic_update.txt
 
 #./etc/usb_modeswitch.d:
 03f0_002a
