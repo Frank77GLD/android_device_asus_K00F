@@ -1267,21 +1267,26 @@ phonelist
 rescoring_lm
 symbols
 
+#Niet in cm9
 #./usr/xt9:
 config
 databases
 
+#Niet in cm9
 #./usr/xt9/config:
 databases.conf
 phone.databases.conf
 seven_inch_pad.databases.conf
 
+#Niet in cm9
 #./usr/xt9/databases/hwr/HK:
 cjk_HK_std_le.hdb
 
+#Niet in cm9
 #./usr/xt9/databases/hwr/PRC:
 cjk_S_gb18030_le.hdb
 
+#Niet in cm9
 #./usr/xt9/databases/kdb:
 azerty.french.center.xml
 chinese.bopomofo.xml
@@ -1341,6 +1346,7 @@ seven_inch_pad_qwerty.ukrainian.center.xml
 seven_inch_pad_qwertz.balkan.center.xml
 seven_inch_pad_qwertz.german.center.xml
 
+#Niet in cm9
 #./usr/xt9/databases/ldb:
 ARlsUN_xt9.ldb
 CSlsUN_xt9.ldb
@@ -1372,6 +1378,7 @@ ZHsbUNps_GB18030_xt9_big.ldb
 ZHtbUNps_Big5HKSCS_bpmf_pinyin_CJ_xt9.ldb
 ZHtbUNps_Big5_bpmf_pinyin_CJ_xt9.ldb
 
+#Niet in cm
 #./usr/xt9/databases/mdb:
 DE.txt
 EN.txt
@@ -1380,8 +1387,9 @@ FR.txt
 IT.txt
 
 #./vendor/etc:
-fallback_fonts.xml
+## in cm fallback_fonts.xml
 
+#Niet in cm9
 #./vendor/firmware:
 BCM4330B1.hcd
 bcm20710a1.hcd
@@ -1392,58 +1400,71 @@ nh660.hcd
 rk903.hcd
 rk903_26M.hcd
 
+#Niet in cm9
 #./vendor/lib:
 libWVStreamControlAPI_L3.so
 libbt-vendor.so
 libwvdrm_L3.so
 libwvm.so
 
+#Niet in cm9
 #./vendor/lib/drm:
 libdrmwvmplugin.so
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection:
 multi_pose_face_landmark_detectors.7
 yaw_roll_face_detectors.6
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7:
 left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32
 nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32
 right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32:
 full_model.bin
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32:
 full_model.bin
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2:
 full_model.bin
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/yaw_roll_face_detectors.6:
 head-y0-yi45-p0-pi45-r0-ri30.4a-v24
 head-y0-yi45-p0-pi45-rn30-ri30.5-v24
 head-y0-yi45-p0-pi45-rp30-ri30.5-v24
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24:
 full_model.bin
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24:
 full_model.bin
 
+#Niet in cm9
 #./vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24:
 full_model.bin
 
+#Niet in cm9
 #./vendor/pittpatt/models/recognition:
 face.face.y0-y0-22-b-N
 
+#Niet in cm9
 #./vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N:
 full_model.bin
 
 #./xbin:
 #daemonsu
-dexdump
+#dexdump
 hciconfig
-hcidump
+#hcidump
 hcitool
 io
 #su
