@@ -352,15 +352,14 @@ rk-core.xml
 call-pppd
 ip-down
 ip-up
-ip-up-vpn
+##ip-up-vpn
 
 #./etc/security:
-cacerts
-otacerts.zip
+#otacerts.zip
 
 #./etc/security/cacerts:
 #CM will makte them
-./etc/updatecmds:
+#./etc/updatecmds:
 google_generic_update.txt
 
 #./etc/usb_modeswitch.d:
@@ -654,8 +653,9 @@ google_generic_update.txt
 6000_1000
 8888_6500
 
+#in cm
 #./etc/wifi:
-etc/wifi/wpa_supplicant.conf
+##etc/wifi/wpa_supplicant.conf
 
 #./fonts:
 AdobeFonts
