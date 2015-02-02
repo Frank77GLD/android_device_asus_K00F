@@ -322,6 +322,7 @@ LUT_W08.txt
 LUT_W09.txt
 LUT_W10.txt
 
+#Folder niet in cm
 #./etc/firmware/rtlbt:
 rtlbt_config
 rtlbt_fw
@@ -335,10 +336,10 @@ android.software.live_wallpaper.xml
 asus.hardware.sound.maxxaudio.xml
 com.android.location.provider.xml
 com.asus.ui.xml
-com.google.android.maps.xml
+#com.google.android.maps.xml
 com.google.android.media.effects.xml
-com.google.widevine.software.drm.xml
-platform.xml
+#com.google.widevine.software.drm.xml
+##platform.xml
 rk-camera-front.xml
 rk-camera.xml
 rk-core.xml
