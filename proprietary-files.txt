@@ -236,19 +236,23 @@ videoplay.sh
 #vold.fstab
 web_browsing.sh
 
+#Files niet in cm
 #./etc/bluetooth/:
 etc/bluetooth/auto_pair_devlist.conf
 etc/bluetooth/bt_did.conf
 etc/bluetooth/bt_stack.conf
 
+#Files in cm
 #./etc/dhcpcd/:
-etc/dhcpcd/dhcpcd.conf
-etc/dhcpcd-run-hooks
+#etc/dhcpcd/dhcpcd.conf
+#etc/dhcpcd-run-hooks
 
-#./etc/dhcpcd/dhcpcd-hooks:
-20-dns.conf
-95-configured
+#Files in cm
+#./etc/dhcpcd/dhcpcd-hooks/:
+#etc/dhcpcd/dhcpcd-hooks/20-dns.conf
+#etc/dhcpcd/dhcpcd-hooks/95-configured
 
+#Files in cm
 #./etc/firmware:
 MTK_MT6622_E2_Patch.nb0
 RT2870AP.dat
