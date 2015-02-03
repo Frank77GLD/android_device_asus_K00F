@@ -1441,9 +1441,9 @@ vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
 
 #./xbin:
 #daemonsu
-dexdump
+#dexdump
 hciconfig
-hcidump
+#hcidump
 hcitool
 io
 #su
