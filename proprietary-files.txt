@@ -1063,56 +1063,56 @@ libz.so
 
 #./lib/egl/:
 egl.cfg
-libEGL_mali.so
-#libGLES_android.so
-libGLESv1_CM_mali.so
-libGLESv2_mali.so
+lib/egl/libEGL_mali.so
+#lib/egl/libGLES_android.so
+lib/egl/libGLESv1_CM_mali.so
+lib/egl/libGLESv2_mali.so
 
-#./lib/hw:
-acoustics.default.so
-alsa.audio.primary.rk101.so
-alsa.audio_policy.rk101.so
-alsa.default.so
-audio.a2dp.default.so
-audio.primary.default.so
-audio.primary.rk101.so
-audio.r_submix.default.so
-audio_policy.default.so
-audio_policy.rk101.so
-bluetooth.default.so
-camera.rk101.so
-gps.rk30xx.so
-gpu.rk101.so
-gralloc.default.so
-gralloc.rk101.so
-hwcomposer.rk101.so
-keystore.default.so
-lights.rk101.so
-local_time.default.so
-power.default.so
-power.rk30xx.so
-sensors.rk101.so
+#./lib/hw/:
+lib/hw/acoustics.default.so
+lib/hw/alsa.audio.primary.rk101.so
+lib/hw/alsa.audio_policy.rk101.so
+lib/hw/alsa.default.so
+lib/hw/audio.a2dp.default.so
+lib/hw/audio.primary.default.so
+lib/hw/audio.primary.rk101.so
+lib/hw/audio.r_submix.default.so
+lib/hw/audio_policy.default.so
+lib/hw/audio_policy.rk101.so
+lib/hw/bluetooth.default.so
+lib/hw/camera.rk101.so
+lib/hw/gps.rk30xx.so
+lib/hw/gpu.rk101.so
+lib/hw/gralloc.default.so
+lib/hw/gralloc.rk101.so
+lib/hw/hwcomposer.rk101.so
+lib/hw/keystore.default.so
+lib/hw/lights.rk101.so
+lib/hw/local_time.default.so
+lib/hw/power.default.so
+lib/hw/power.rk30xx.so
+lib/hw/sensors.rk101.so
 
-#./lib/modules:
-mali.ko
-mali.ko.3.0.36+
-rk29-ipp.ko
-rk29-ipp.ko.3.0.36+
-rk30_mirroring.ko.3.0.36+
-rk30_mirroring.ko.3.0.8+
-ump.ko
-ump.ko.3.0.36+
-vpu_service.ko
-vpu_service.ko.3.0.36+
-wlan.ko
+#./lib/modules/:
+lib/modules/mali.ko
+lib/modules/mali.ko.3.0.36+
+lib/modules/rk29-ipp.ko
+lib/modules/rk29-ipp.ko.3.0.36+
+lib/modules/rk30_mirroring.ko.3.0.36+
+lib/modules/rk30_mirroring.ko.3.0.8+
+lib/modules/ump.ko
+lib/modules/ump.ko.3.0.36+
+lib/modules/vpu_service.ko
+lib/modules/vpu_service.ko.3.0.36+
+lib/modules/wlan.ko
 
-#./lib/soundfx:
-#in cm libaudiopreprocessing.so
-#in cm libbundlewrapper.so
-libdownmix.so
-libmaxxeffect-cembedded.so
-#in cm libreverbwrapper.so
-#in cm libvisualizer.so
+#./lib/soundfx/:
+#in cm lib/soundfx/libaudiopreprocessing.so
+#in cm lib/soundfx/libbundlewrapper.so
+lib/soundfx/libdownmix.so
+lib/soundfx/libmaxxeffect-cembedded.so
+#in cm lib/soundfx/libreverbwrapper.so
+#in cm lib/soundfx/libvisualizer.so
 
 #./lib/ssl/engines/:
 lib/ssl/engines/libkeystore.so
