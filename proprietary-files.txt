@@ -1114,129 +1114,128 @@ libmaxxeffect-cembedded.so
 #in cm libreverbwrapper.so
 #in cm libvisualizer.so
 
-#./lib/ssl/engines:
-libkeystore.so
+#./lib/ssl/engines/:
+lib/ssl/engines/libkeystore.so
 
-#./media:
-#in cm LMprec_508.emd
-#in cm PFFprec_600.emd
-#in cm bootanimation.zip
-#bootanimation_forreset.zip
+#./media/:
+#in cm media/LMprec_508.emd
+#in cm media/PFFprec_600.emd
+#in cm media/bootanimation.zip
+#media/bootanimation_forreset.zip
 
-#./media/audio/alarms:
+#./media/audio/alarms/:
 #Will use cm audio.
 
-#./media/audio/notifications:
+#./media/audio/notifications/:
 #Will use cm audio.
 
-#./media/audio/ringtones:
+#./media/audio/ringtones/:
 #Will use cm audio.
 
-#./media/audio/ui:
+#./media/audio/ui/:
 #Will use cm audio.
 
 #./sbin:
-#in cm su
+#in cm sbin/su
 
-#./scripts/monkey:
-EmptyActivity.obj
-TestIME.obj
-blacklist.txt
-monkey_sh
-monkey_test_a
-monkey_test_p
-package_list.txt
-profiling
-timer
+#nakijken.
+#./scripts/monkey/:
+scripts/monkey/EmptyActivity.obj
+scripts/monkey/TestIME.obj
+scripts/monkey/blacklist.txt
+scripts/monkey/monkey_sh
+scripts/monkey/monkey_test_a
+scripts/monkey/monkey_test_p
+scripts/monkey/package_list.txt
+scripts/monkey/profiling
+scripts/monkey/timer
 
-#./tts:
-#in cm lang_pico
+#./tts/:
+#in cm tts/lang_pico
 
-#./tts/lang_pico:
-de-DE_gl0_sg.bin
-de-DE_ta.bin
-en-GB_kh0_sg.bin
-en-GB_ta.bin
-en-US_lh0_sg.bin
-en-US_ta.bin
-es-ES_ta.bin
-es-ES_zl0_sg.bin
-fr-FR_nk0_sg.bin
-fr-FR_ta.bin
-it-IT_cm0_sg.bin
-it-IT_ta.bin
+#./tts/lang_pico/:
+tts/lang_pico/de-DE_gl0_sg.bin
+tts/lang_pico/de-DE_ta.bin
+tts/lang_pico/en-GB_kh0_sg.bin
+tts/lang_pico/en-GB_ta.bin
+tts/lang_pico/en-US_lh0_sg.bin
+tts/lang_pico/en-US_ta.bin
+tts/lang_pico/es-ES_ta.bin
+tts/lang_pico/es-ES_zl0_sg.bin
+tts/lang_pico/fr-FR_nk0_sg.bin
+tts/lang_pico/fr-FR_ta.bin
+tts/lang_pico/it-IT_cm0_sg.bin
+tts/lang_pico/it-IT_ta.bin
 
-#./usr/icu:
-# in cm icudt48l.dat
+#./usr/icu/:
+# in cm usr/icu/icudt48l.dat
 
-#./usr/idc:
-Waltop.idc
-qwerty.idc
-qwerty2.idc
-touchscreen.idc
+#./usr/idc/:
+usr/idc/Waltop.idc
+usr/idc/qwerty.idc
+usr/idc/qwerty2.idc
+usr/idc/touchscreen.idc
 
 #werkt ook met cm?
-#./usr/keychars:
-Generic.kcm
-Virtual.kcm
-qwerty.kcm
-qwerty2.kcm
+#./usr/keychars/:
+usr/keychars/Generic.kcm
+usr/keychars/Virtual.kcm
+usr/keychars/qwerty.kcm
+usr/keychars/qwerty2.kcm
 
 #werkt ook met stock?
-#./usr/keylayout:
-AVRCP.kl
-Generic.kl
+#./usr/keylayout/:
+usr/keylayout/AVRCP.kl
+usr/keylayout/Generic.kl
 #nakijken:
-# in cm Vendor_045e_Product_028e.kl
-# in cm Vendor_046d_Product_c216.kl
-# in cm Vendor_046d_Product_c294.kl
-# in cm Vendor_046d_Product_c299.kl
-# in cm Vendor_046d_Product_c532.kl
-# in cm Vendor_054c_Product_0268.kl
-# in cm Vendor_05ac_Product_0239.kl
-# in cm Vendor_22b8_Product_093d.kl
-qwerty.kl
-rk29-keypad.kl
+# in cm usr/keylayout/Vendor_045e_Product_028e.kl
+# in cm usr/keylayout/Vendor_046d_Product_c216.kl
+# in cm usr/keylayout/Vendor_046d_Product_c294.kl
+# in cm usr/keylayout/Vendor_046d_Product_c299.kl
+# in cm usr/keylayout/Vendor_046d_Product_c532.kl
+# in cm usr/keylayout/Vendor_054c_Product_0268.kl
+# in cm usr/keylayout/Vendor_05ac_Product_0239.kl
+# in cm usr/keylayout/Vendor_22b8_Product_093d.kl
+usr/keylayout/qwerty.kl
+usr/keylayout/rk29-keypad.kl
 
-#./usr/share/alsa/cards:
-aliases.conf
+#./usr/share/alsa/cards/:
+usr/share/alsa/cards/aliases.conf
 
-#./usr/share/alsa/init:
-00main
-default
-hda
-help
-info
-test
+#nakijken folder
+#./usr/share/alsa/init/:
+usr/share/alsa/init/00main
+usr/share/alsa/init/default
+usr/share/alsa/init/hda
+usr/share/alsa/init/help
+usr/share/alsa/init/info
+usr/share/alsa/init/test
 
-#./usr/share/alsa/pcm:
-center_lfe.conf
-default.conf
-dmix.conf
-dpl.conf
-dsnoop.conf
-front.conf
-iec958.conf
-modem.conf
-rear.conf
-side.conf
-surround40.conf
-surround41.conf
-surround50.conf
-surround51.conf
-surround71.conf
+#./usr/share/alsa/pcm/:
+usr/share/alsa/pcm/center_lfe.conf
+usr/share/alsa/pcm/default.conf
+usr/share/alsa/pcm/dmix.conf
+usr/share/alsa/pcm/dpl.conf
+usr/share/alsa/pcm/dsnoop.conf
+usr/share/alsa/pcm/front.conf
+usr/share/alsa/pcm/iec958.conf
+usr/share/alsa/pcm/modem.conf
+usr/share/alsa/pcm/rear.conf
+usr/share/alsa/pcm/side.conf
+usr/share/alsa/pcm/surround40.conf
+usr/share/alsa/pcm/surround41.conf
+usr/share/alsa/pcm/surround50.conf
+usr/share/alsa/pcm/surround51.conf
+usr/share/alsa/pcm/surround71.conf
 
-#./usr/share/bmd:
-# in cm RFFspeed_501.bmd
-# in cm RFFstd_501.bmd
+#./usr/share/bmd/:
+# in cm usr/share/bmd/RFFspeed_501.bmd
+# in cm usr/share/bmd/RFFstd_501.bmd
 
-#./usr/share/zoneinfo:
-# in cm zoneinfo.dat
-# in cm zoneinfo.idx
-# in cm zoneinfo.version
-
-#./usr/srec:
-en-US
+#./usr/share/zoneinfo/:
+# in cm usr/share/zoneinfo/zoneinfo.dat
+# in cm usr/share/zoneinfo/zoneinfo.idx
+# in cm usr/share/zoneinfo/zoneinfo.version
 
 #./usr/srec/en-US/:
 usr/srec/en-US/acoustic_model
