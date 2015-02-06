@@ -66,94 +66,344 @@ mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/dete
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/xbin
-#mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/wifi
 
-#This are TomTec files. Will need the Asus files!:
 cp -a src/lib/libril.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libril.so
-cp -a src/key_921600.psr ../../../device/$VENDOR/$DEVICE/proprietary/key_921600.psr
-cp -a src/key_3000000.psr ../../../device/$VENDOR/$DEVICE/proprietary/key_3000000.psr
-cp -a src/ts.conf ../../../device/$VENDOR/$DEVICE/proprietary/ts.conf
 cp -a src/bin/bugmailer.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/bugmailer.sh
 cp -a src/bin/busybox ../../../device/$VENDOR/$DEVICE/proprietary/bin/busybox
-cp -a src/bin/chkntfs ../../../device/$VENDOR/$DEVICE/proprietary/bin/chkntfs
+cp -a src/bin/cat ../../../device/$VENDOR/$DEVICE/proprietary/bin/cat
+cp -a src/bin/ChargerModSwitch.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/ChargerModSwitch.sh
+cp -a src/bin/chat ../../../device/$VENDOR/$DEVICE/proprietary/bin/chat
+cp -a src/bin/chmod ../../../device/$VENDOR/$DEVICE/proprietary/bin/chmod
+cp -a src/bin/chown ../../../device/$VENDOR/$DEVICE/proprietary/bin/chown
+cp -a src/bin/cmp ../../../device/$VENDOR/$DEVICE/proprietary/bin/cmp
+cp -a src/bin/content ../../../device/$VENDOR/$DEVICE/proprietary/bin/content
+cp -a src/bin/cp ../../../device/$VENDOR/$DEVICE/proprietary/bin/cp
+cp -a src/bin/dalvikvm ../../../device/$VENDOR/$DEVICE/proprietary/bin/dalvikvm
+cp -a src/bin/date ../../../device/$VENDOR/$DEVICE/proprietary/bin/date
+cp -a src/bin/debuggerd ../../../device/$VENDOR/$DEVICE/proprietary/bin/debuggerd
+cp -a src/bin/dexopt ../../../device/$VENDOR/$DEVICE/proprietary/bin/dexopt
+cp -a src/bin/df ../../../device/$VENDOR/$DEVICE/proprietary/bin/df
 cp -a src/bin/dhcpcd ../../../device/$VENDOR/$DEVICE/proprietary/bin/dhcpcd
+cp -a src/bin/dmesg ../../../device/$VENDOR/$DEVICE/proprietary/bin/dmesg
+cp -a src/bin/dnsmasq ../../../device/$VENDOR/$DEVICE/proprietary/bin/dnsmasq
+cp -a src/bin/drmserver ../../../device/$VENDOR/$DEVICE/proprietary/bin/drmserver
+cp -a src/bin/drmservice ../../../device/$VENDOR/$DEVICE/proprietary/bin/drmservice
+cp -a src/bin/du ../../../device/$VENDOR/$DEVICE/proprietary/bin/du
+cp -a src/bin/dumpstate ../../../device/$VENDOR/$DEVICE/proprietary/bin/dumpstate
+cp -a src/bin/dumpsys ../../../device/$VENDOR/$DEVICE/proprietary/bin/dumpsys
+cp -a src/bin/e2fsck ../../../device/$VENDOR/$DEVICE/proprietary/bin/e2fsck
+cp -a src/bin/exfatck ../../../device/$VENDOR/$DEVICE/proprietary/bin/exfatck
+cp -a src/bin/exfatlabel ../../../device/$VENDOR/$DEVICE/proprietary/bin/exfatlabel
+cp -a src/bin/exfatlabelexfatlabel ../../../device/$VENDOR/$DEVICE/proprietary/bin/exfatlabel
+cp -a src/bin/fsck_msdos ../../../device/$VENDOR/$DEVICE/proprietary/bin/fsck_msdos
 cp -a src/bin/flash_eraseall ../../../device/$VENDOR/$DEVICE/proprietary/bin/flash_eraseall
+cp -a src/bin/GammaSetting ../../../device/$VENDOR/$DEVICE/proprietary/bin/GammaSetting
+cp -a src/bin/getevent ../../../device/$VENDOR/$DEVICE/proprietary/bin/getevent
+cp -a src/bin/getprop ../../../device/$VENDOR/$DEVICE/proprietary/bin/getprop
+cp -a src/bin/gpsd ../../../device/$VENDOR/$DEVICE/proprietary/bin/gpsd
+cp -a src/bin/grep ../../../device/$VENDOR/$DEVICE/proprietary/bin/grep
+cp -a src/bin/gsm0710muxd ../../../device/$VENDOR/$DEVICE/proprietary/bin/gsm0710muxd
+cp -a src/bin/gsm0710muxd_a85xx ../../../device/$VENDOR/$DEVICE/proprietary/bin/gsm0710muxd_a85xx
+cp -a src/bin/gsm0710muxd_c66a ../../../device/$VENDOR/$DEVICE/proprietary/bin/gsm0710muxd_c66a
+cp -a src/bin/gsm0710muxd_m51 ../../../device/$VENDOR/$DEVICE/proprietary/bin/gsm0710muxd_m51
+cp -a src/bin/gsm0710muxd_mt6250 ../../../device/$VENDOR/$DEVICE/proprietary/bin/gsm0710muxd_mt6250
+cp -a src/bin/gzip ../../../device/$VENDOR/$DEVICE/proprietary/bin/gzip
+cp -a src/bin/hd ../../../device/$VENDOR/$DEVICE/proprietary/bin/hd
 cp -a src/bin/hostapd ../../../device/$VENDOR/$DEVICE/proprietary/bin/hostapd
-cp -a src/bin/hostapd_cli ../../../device/$VENDOR/$DEVICE/proprietary/bin/hostapd_cli
-cp -a src/bin/hostapd_wps ../../../device/$VENDOR/$DEVICE/proprietary/bin/hostapd_wps
+cp -a src/bin/id ../../../device/$VENDOR/$DEVICE/proprietary/bin/id
+cp -a src/bin/ifconfig ../../../device/$VENDOR/$DEVICE/proprietary/bin/ifconfig
+cp -a src/bin/iftop ../../../device/$VENDOR/$DEVICE/proprietary/bin/iftop
+cp -a src/bin/ime ../../../device/$VENDOR/$DEVICE/proprietary/bin/ime
+cp -a src/bin/input ../../../device/$VENDOR/$DEVICE/proprietary/bin/input
+cp -a src/bin/insmod ../../../device/$VENDOR/$DEVICE/proprietary/bin/insmod
+cp -a src/bin/installd ../../../device/$VENDOR/$DEVICE/proprietary/bin/installd
+cp -a src/bin/ioctl ../../../device/$VENDOR/$DEVICE/proprietary/bin/ioctl
+cp -a src/bin/ionice ../../../device/$VENDOR/$DEVICE/proprietary/bin/ionice
+cp -a src/bin/ip ../../../device/$VENDOR/$DEVICE/proprietary/bin/ip
 cp -a src/bin/ip6tables ../../../device/$VENDOR/$DEVICE/proprietary/bin/ip6tables
 cp -a src/bin/iptables ../../../device/$VENDOR/$DEVICE/proprietary/bin/iptables
 cp -a src/bin/iwconfig ../../../device/$VENDOR/$DEVICE/proprietary/bin/iwconfig
 cp -a src/bin/iwlist ../../../device/$VENDOR/$DEVICE/proprietary/bin/iwlist
+cp -a src/bin/keystore ../../../device/$VENDOR/$DEVICE/proprietary/bin/keystore
+cp -a src/bin/kill ../../../device/$VENDOR/$DEVICE/proprietary/bin/kill
+cp -a src/bin/linker ../../../device/$VENDOR/$DEVICE/proprietary/bin/linker
+cp -a src/bin/ln ../../../device/$VENDOR/$DEVICE/proprietary/bin/ln
+cp -a src/bin/log ../../../device/$VENDOR/$DEVICE/proprietary/bin/log
+cp -a src/bin/logcat ../../../device/$VENDOR/$DEVICE/proprietary/bin/logcat
+cp -a src/bin/logwrapper ../../../device/$VENDOR/$DEVICE/proprietary/bin/logwrapper
+cp -a src/bin/ls ../../../device/$VENDOR/$DEVICE/proprietary/bin/ls
+cp -a src/bin/lsmod ../../../device/$VENDOR/$DEVICE/proprietary/bin/lsmod
+cp -a src/bin/lsof ../../../device/$VENDOR/$DEVICE/proprietary/bin/lsof
 cp -a src/bin/make_ext4fs ../../../device/$VENDOR/$DEVICE/proprietary/bin/make_ext4fs
+cp -a src/bin/md5 ../../../device/$VENDOR/$DEVICE/proprietary/bin/md5
+cp -a src/bin/mdnsd ../../../device/$VENDOR/$DEVICE/proprietary/bin/mdnsd
+cp -a src/bin/mediaserver ../../../device/$VENDOR/$DEVICE/proprietary/bin/mediaserver
+cp -a src/bin/mkdir ../../../device/$VENDOR/$DEVICE/proprietary/bin/mkdir
+cp -a src/bin/mkexfat ../../../device/$VENDOR/$DEVICE/proprietary/bin/mkexfat
 cp -a src/bin/mem ../../../device/$VENDOR/$DEVICE/proprietary/bin/mem
 cp -a src/bin/mkntfs ../../../device/$VENDOR/$DEVICE/proprietary/bin/mkntfs
+cp -a src/bin/mksh ../../../device/$VENDOR/$DEVICE/proprietary/bin/mksh
+cp -a src/bin/monkey ../../../device/$VENDOR/$DEVICE/proprietary/bin/monkey
+cp -a src/bin/mount ../../../device/$VENDOR/$DEVICE/proprietary/bin/mount
+cp -a src/bin/mtpd ../../../device/$VENDOR/$DEVICE/proprietary/bin/mtpd
+cp -a src/bin/mv ../../../device/$VENDOR/$DEVICE/proprietary/bin/mv
+cp -a src/bin/nandread ../../../device/$VENDOR/$DEVICE/proprietary/bin/nandread
+cp -a src/bin/ndc ../../../device/$VENDOR/$DEVICE/proprietary/bin/ndc
 cp -a src/bin/netcfg ../../../device/$VENDOR/$DEVICE/proprietary/bin/netcfg
 cp -a src/bin/netd ../../../device/$VENDOR/$DEVICE/proprietary/bin/netd
-cp -a src/bin/rild ../../../device/$VENDOR/$DEVICE/proprietary/bin/rild
+cp -a src/bin/netstat ../../../device/$VENDOR/$DEVICE/proprietary/bin/netstat
+cp -a src/bin/newfs_msdos ../../../device/$VENDOR/$DEVICE/proprietary/bin/newfs_msdos
+cp -a src/bin/notify ../../../device/$VENDOR/$DEVICE/proprietary/bin/notify
+cp -a src/bin/ntfsck ../../../device/$VENDOR/$DEVICE/proprietary/bin/ntfsck
+cp -a src/bin/ntfsdebug ../../../device/$VENDOR/$DEVICE/proprietary/bin/ntfsdebug
+cp -a src/bin/ntfsinfo ../../../device/$VENDOR/$DEVICE/proprietary/bin/ntfsinfo
+cp -a src/bin/ntfslabel ../../../device/$VENDOR/$DEVICE/proprietary/bin/ntfslabel
+cp -a src/bin/pbtest ../../../device/$VENDOR/$DEVICE/proprietary/bin/pbtest
+cp -a src/bin/performance ../../../device/$VENDOR/$DEVICE/proprietary/bin/performance
+cp -a src/bin/ping ../../../device/$VENDOR/$DEVICE/proprietary/bin/ping
+cp -a src/bin/pm ../../../device/$VENDOR/$DEVICE/proprietary/bin/pm
 cp -a src/bin/pppd ../../../device/$VENDOR/$DEVICE/proprietary/bin/pppd
+cp -a src/bin/prebugreport ../../../device/$VENDOR/$DEVICE/proprietary/bin/prebugreport
+cp -a src/bin/printenv ../../../device/$VENDOR/$DEVICE/proprietary/bin/printenv
+cp -a src/bin/ps ../../../device/$VENDOR/$DEVICE/proprietary/bin/ps
+cp -a src/bin/racoon ../../../device/$VENDOR/$DEVICE/proprietary/bin/racoon
+cp -a src/bin/reboot ../../../device/$VENDOR/$DEVICE/proprietary/bin/reboot
+cp -a src/bin/renice ../../../device/$VENDOR/$DEVICE/proprietary/bin/renice
+cp -a src/bin/requestsync ../../../device/$VENDOR/$DEVICE/proprietary/bin/requestsync
+cp -a src/bin/rild ../../../device/$VENDOR/$DEVICE/proprietary/bin/rild
+cp -a src/bin/rild3 ../../../device/$VENDOR/$DEVICE/proprietary/bin/rild3
+cp -a src/bin/rm ../../../device/$VENDOR/$DEVICE/proprietary/bin/rm
+cp -a src/bin/rmdir ../../../device/$VENDOR/$DEVICE/proprietary/bin/rmdir
+cp -a src/bin/rmmod ../../../device/$VENDOR/$DEVICE/proprietary/bin/rmmod
+cp -a src/bin/route ../../../device/$VENDOR/$DEVICE/proprietary/bin/route
+cp -a src/bin/run-as ../../../device/$VENDOR/$DEVICE/proprietary/bin/run-as
+cp -a src/bin/schedtest ../../../device/$VENDOR/$DEVICE/proprietary/bin/schedtest
+cp -a src/bin/schedtop ../../../device/$VENDOR/$DEVICE/proprietary/bin/schedtop
+cp -a src/bin/screencap ../../../device/$VENDOR/$DEVICE/proprietary/bin/screencap
+cp -a src/bin/screenshot ../../../device/$VENDOR/$DEVICE/proprietary/bin/screenshot
+cp -a src/bin/sdcard ../../../device/$VENDOR/$DEVICE/proprietary/bin/sdcard
 cp -a src/bin/send_bug ../../../device/$VENDOR/$DEVICE/proprietary/bin/send_bug
+cp -a src/bin/sendevent ../../../device/$VENDOR/$DEVICE/proprietary/bin/sendevent
+cp -a src/bin/sensorservice ../../../device/$VENDOR/$DEVICE/proprietary/bin/sensorservice
+cp -a src/bin/service ../../../device/$VENDOR/$DEVICE/proprietary/bin/service
+cp -a src/bin/servicemanager ../../../device/$VENDOR/$DEVICE/proprietary/bin/servicemanager
+cp -a src/bin/setconsole ../../../device/$VENDOR/$DEVICE/proprietary/bin/setconsole
+cp -a src/bin/setprop ../../../device/$VENDOR/$DEVICE/proprietary/bin/setprop
+cp -a src/bin/settings ../../../device/$VENDOR/$DEVICE/proprietary/bin/settings
+cp -a src/bin/sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/sh
+cp -a src/bin/sleep ../../../device/$VENDOR/$DEVICE/proprietary/bin/sleep
+cp -a src/bin/smd ../../../device/$VENDOR/$DEVICE/proprietary/bin/smd
+cp -a src/bin/start ../../../device/$VENDOR/$DEVICE/proprietary/bin/start
+cp -a src/bin/stop ../../../device/$VENDOR/$DEVICE/proprietary/bin/stop
+cp -a src/bin/surfaceflinger ../../../device/$VENDOR/$DEVICE/proprietary/bin/surfaceflinger
+cp -a src/bin/svc ../../../device/$VENDOR/$DEVICE/proprietary/bin/svc
+cp -a src/bin/sync ../../../device/$VENDOR/$DEVICE/proprietary/bin/sync
+cp -a src/bin/system_server ../../../device/$VENDOR/$DEVICE/proprietary/bin/system_server
 cp -a src/bin/setup_fs ../../../device/$VENDOR/$DEVICE/proprietary/bin/setup_fs
 cp -a src/bin/tc ../../../device/$VENDOR/$DEVICE/proprietary/bin/tc
+cp -a src/bin/texfatdebug ../../../device/$VENDOR/$DEVICE/proprietary/bin/texfatdebug
+cp -a src/bin/texfatinfo ../../../device/$VENDOR/$DEVICE/proprietary/bin/texfatinfo
+cp -a src/bin/toolbox ../../../device/$VENDOR/$DEVICE/proprietary/bin/toolbox
+cp -a src/bin/top ../../../device/$VENDOR/$DEVICE/proprietary/bin/top
+cp -a src/bin/touch ../../../device/$VENDOR/$DEVICE/proprietary/bin/touch
+cp -a src/bin/uiautomator ../../../device/$VENDOR/$DEVICE/proprietary/bin/uiautomator
+cp -a src/bin/umount ../../../device/$VENDOR/$DEVICE/proprietary/bin/umount
+cp -a src/bin/uptime ../../../device/$VENDOR/$DEVICE/proprietary/bin/uptime
+cp -a src/bin/usb_modeswitch ../../../device/$VENDOR/$DEVICE/proprietary/bin/usb_modeswitch
+cp -a src/bin/usb_modeswitch.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/usb_modeswitch.sh
+cp -a src/bin/vdc ../../../device/$VENDOR/$DEVICE/proprietary/bin/vdc
 cp -a src/bin/vold ../../../device/$VENDOR/$DEVICE/proprietary/bin/vold
-cp -a src/bin/wpa_cli ../../../device/$VENDOR/$DEVICE/proprietary/bin/wpa_cli
+cp -a src/bin/vmstat ../../../device/$VENDOR/$DEVICE/proprietary/bin/vmstat
+cp -a src/bin/watchprops ../../../device/$VENDOR/$DEVICE/proprietary/bin/watchprops
+cp -a src/bin/wfd ../../../device/$VENDOR/$DEVICE/proprietary/bin/wfd
+cp -a src/bin/whtest.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/whtest.sh
+cp -a src/bin/wipe ../../../device/$VENDOR/$DEVICE/proprietary/bin/wipe
 cp -a src/bin/wpa_supplicant ../../../device/$VENDOR/$DEVICE/proprietary/bin/wpa_supplicant
+
+
+
+alarm_filter.xml
+amazon-kindle.properties
+
+
 cp -a src/etc/apns-conf.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/apns-conf.xml
+
+asound.conf
+
 cp -a src/etc/audio_effects.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/audio_effects.conf
+
+audio_effects_.mps
+audio_policy.conf
+cpu-balance.sh
+cpu-normal.sh
+cpu-power-saving.sh
+
+
 cp -a src/etc/dbus.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/dbus.conf
+
 cp -a src/etc/dbus.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/dbus.conf
-cp -a src/etc/dhcpcd.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/dhcpcd.conf
+
 cp -a src/etc/event-log-tags ../../../device/$VENDOR/$DEVICE/proprietary/etc/event-log-tags
 cp -a src/etc/fallback_fonts.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/fallback_fonts.xml
+
+floating-res.apk
+gps.conf
+gpsconfig.xml
+
+
 cp -a src/etc/hosts ../../../device/$VENDOR/$DEVICE/proprietary/etc/hosts
+
+init.asus.audbg.sh
+
+cp -a src/etc/init.asus.audbg.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/init.asus.audbg.sh
 cp -a src/etc/init.goldfish.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/init.goldfish.sh
-cp -a src/etc/init.goldfish.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/init.goldfish.sh
+
+libgps.conf
+media_codecs.xml
+
 cp -a src/etc/media_profiles.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/media_profiles.xml
 cp -a src/etc/mkshrc ../../../device/$VENDOR/$DEVICE/proprietary/etc/mkshrc
+
+NOTICE.html.gz
+operator_table
+packages-compat.xml
+packages-composer.xml
+performance_info.xml
+recovery-resource.dat
+spn-conf.xml
+
 cp -a src/etc/system_fonts.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/system_fonts.xml
+
+videoplay.sh
+
 cp -a src/etc/vold.fstab ../../../device/$VENDOR/$DEVICE/proprietary/etc/vold.fstab
-cp -a src/etc/bluetooth/audio.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/audio.conf
-cp -a src/etc/bluetooth/auto_pairing.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/auto_pairing.conf
-cp -a src/etc/bluetooth/blacklist.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/blacklist.conf
-cp -a src/etc/bluetooth/input.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/input.conf
-cp -a src/etc/bluetooth/network.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/network.conf
-cp -a src/etc/permissions/android.hardware.camera.flash-autofocus.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.camera.flash-autofocus.xml
-cp -a src/etc/permissions/android.hardware.camera.front.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.camera.front.xml
-cp -a src/etc/permissions/android.hardware.camera.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.camera.xml
-cp -a src/etc/permissions/android.hardware.location.gps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.gps.xml
-cp -a src/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml
-cp -a src/etc/permissions/android.hardware.touchscreen.multitouch.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.touchscreen.multitouch.xml
-cp -a src/etc/permissions/android.hardware.usb.host.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.usb.host.xml
-cp -a src/etc/permissions/android.hardware.wifi.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.wifi.xml
+
+web_browsing
+
+cp -a src/etc/bluetooth/auto_pair_devlist.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/auto_pair_devlist.conf
+cp -a src/etc/bluetooth/bt_did.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/bt_did.conf
+cp -a src/etc/bluetooth/bt_did.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/bt_did.conf
+
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+
+
+
+
+cp -a src/etc/firmware/rtlbt/rtlbt_config ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_config
+cp -a src/etc/firmware/rtlbt/rtlbt_fw ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_fw
+
+
+
+
+cp -a src/etc/firmware/Splendid/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/asussplendid_config.xml
+
+
+cp -a src/etc/firmware/Splendid/LUT/LUT_C01.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C01.txt
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
+
+
+cp -a src/etc/permissions/
+android.hardware.location.gps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.gps.xml
+cp -a src/etc/permissions/android.hardware.location.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.xml
+cp -a src/etc/permissions/android.hardware.sensor.compass.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.sensor.compass.xml
+cp -a src/etc/permissions/android.hardware.wifi.direct.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.wifi.direct.xml
 cp -a src/etc/permissions/android.software.live_wallpaper.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.software.live_wallpaper.xml
-cp -a src/etc/permissions/android.software.sip.voip.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.software.sip.voip.xml
+cp -a src/etc/permissions/asus.hardware.sound.maxxaudio.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/asus.hardware.sound.maxxaudio.xml
 cp -a src/etc/permissions/com.android.location.provider.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.android.location.provider.xml
+cp -a src/etc/permissions/com.asus.ui.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.asus.ui.xml
 cp -a src/etc/permissions/com.google.android.maps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.google.android.maps.xml
 cp -a src/etc/permissions/com.google.android.media.effects.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.google.android.media.effects.xml
-cp -a src/etc/permissions/android.software.sip.voip.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.software.sip.voip.xml
 cp -a src/etc/permissions/com.google.widevine.software.drm.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.google.widevine.software.drm.xml
-cp -a src/etc/permissions/features.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/features.xml
-cp -a src/etc/permissions/handheld_core_hardware.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/handheld_core_hardware.xml
 cp -a src/etc/permissions/platform.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/platform.xml
-cp -a src/etc/ppp/chap-secrets ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/chap-secrets
-cp -a src/etc/ppp/gprs-connect-chat ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/gprs-connect-chat
-cp -a src/etc/ppp/init.gprs-pppd ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/init.gprs-pppd
+cp -a src/etc/permissions/rk-camera.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-camera.xml
+cp -a src/etc/permissions/rk-camera-front.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-camera-front.xml
+cp -a src/etc/permissions/rk-core.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-core.xml
+
+cp -a src/etc/ppp/call-pppd ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/call-pppd
 cp -a src/etc/ppp/ip-down ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/ip-down
 cp -a src/etc/ppp/ip-up ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/ip-up
 cp -a src/etc/ppp/ip-up-vpn ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/ip-up-vpn
-cp -a src/etc/ril/ril.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/ril/ril.xml
-cp -a src/etc/wifi/hostapd.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/wifi/hostapd.conf
+cp -a src/etc/updatecmds/google_generic_update.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/updatecmds/google_generic_update.txt
+
+
+cp -a src/etc/usb_modeswitch.d/0ace_20ff ../../../device/$VENDOR/$DEVICE/proprietary/etc/usb_modeswitch.d/0ace_20ff
+OVERSLAAN?
+
 cp -a src/etc/wifi/wpa_supplicant.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/wifi/wpa_supplicant.conf
-cp -a src/fonts/AndroidClock.ttf ../../../device/$VENDOR/$DEVICE/proprietary/fonts/AndroidClock.ttf
-cp -a src/fonts/AndroidClock_Highlight.ttf ../../../device/$VENDOR/$DEVICE/proprietary/fonts/AndroidClock_Highlight.ttf
-cp -a src/fonts/AndroidClock_Solid.ttf ../../../device/$VENDOR/$DEVICE/proprietary/fonts/AndroidClock_Solid.ttf
-cp -a src/fonts/Clockopia.ttf ../../../device/$VENDOR/$DEVICE/proprietary/fonts/Clockopia.ttf
-cp -a src/fonts/DroidNaskh-Regular.ttf ../../../device/$VENDOR/$DEVICE/proprietary/fonts/DroidNaskh-Regular.ttf
-cp -a src/fonts/DroidSansFallback_DxB.ttf ../../../device/$VENDOR/$DEVICE/proprietary/fonts/DroidSansFallback_DxB.ttf
+cp -a src/scripts/monkey/blacklist.txt ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/blacklist.txt
+cp -a src/scripts/monkey/EmptyActivity.obj ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/EmptyActivity.obj
+cp -a src/scripts/monkey/monkey_sh ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_sh
+cp -a src/scripts/monkey/monkey_test_a ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_test_a
+cp -a src/scripts/monkey/monkey_test_b ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_test_b
+cp -a src/scripts/monkey/package_list.txt ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/package_list.txt
+cp -a src/scripts/monkey/profiling ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/profiling
+cp -a src/scripts/monkey/TestIME.obj ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/TestIME.obj
+cp -a src/scripts/monkey/timer ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/timer
+
 cp -a src/framework/com.android.future.usb.accessory.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/com.android.future.usb.accessory.jar
 cp -a src/framework/com.google.android.maps.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/com.google.android.maps.jar
 cp -a src/framework/com.google.android.media.effects.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/com.google.android.media.effects.jar
 cp -a src/framework/send_bug.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/send_bug.jar
+
 cp -a src/lib/libandroid.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid.so
 cp -a src/lib/libandroid_runtime.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid_runtime.so
 cp -a src/lib/libandroid_servers.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid_servers.so
@@ -248,198 +498,27 @@ cp -a src/lib/hw/lights.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/l
 cp -a src/lib/hw/lights.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/lights.goldfish.so
 cp -a src/lib/hw/sensors.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/sensors.tcc892x.so
 cp -a src/lib/hw/sensors.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/sensors.goldfish.so
+
 cp -a src/lib/modules/vpu_decoder.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_decoder.ko
-cp -a src/lib/modules/vpu_decoder_ext.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_decoder_ext.ko
+cp -a src/lib/modules/vpu_decoder_ext.ko ../../../device/$VENDOR/
+$DEVICE/proprietary/lib/modules/vpu_decoder_ext.ko
 cp -a src/lib/modules/vpu_encoder.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_encoder.ko
 cp -a src/lib/modules/vpu_manager.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_manager.ko
-cp -a src/media/audio/alarms/Alarm_Beep_01.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Alarm_Beep_01.ogg
-cp -a src/media/audio/alarms/Alarm_Beep_02.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Alarm_Beep_02.ogg
-cp -a src/media/audio/alarms/Alarm_Beep_03.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Alarm_Beep_03.ogg
-cp -a src/media/audio/alarms/Alarm_Buzzer.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Alarm_Buzzer.ogg
-cp -a src/media/audio/alarms/Alarm_Classic.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Alarm_Classic.ogg
-cp -a src/media/audio/alarms/Alarm_Rooster_02.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Alarm_Rooster_02.ogg
-cp -a src/media/audio/alarms/Barium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Barium.ogg
-cp -a src/media/audio/alarms/Cesium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Cesium.ogg
-cp -a src/media/audio/alarms/Plutonium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Plutonium.ogg
-cp -a src/media/audio/alarms/Scandium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/alarms/Scandium.ogg
-cp -a src/media/audio/notifications/Aldebaran.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Aldebaran.ogg
-cp -a src/media/audio/notifications/Altair.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Altair.ogg
-cp -a src/media/audio/notifications/Antares.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Antares.ogg
-cp -a src/media/audio/notifications/Antimony.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Antimony.ogg
-cp -a src/media/audio/notifications/arcturus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/arcturus.ogg
-cp -a src/media/audio/notifications/Argon.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Argon.ogg
-cp -a src/media/audio/notifications/Beat_Box_Android.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Beat_Box_Android.ogg
-cp -a src/media/audio/notifications/Beryllium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Beryllium.ogg
-cp -a src/media/audio/notifications/Betelgeuse.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Betelgeuse.ogg
-cp -a src/media/audio/notifications/CaffeineSnake.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/CaffeineSnake.ogg
-cp -a src/media/audio/notifications/Canopus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Canopus.ogg
-cp -a src/media/audio/notifications/Capella.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Capella.ogg
-cp -a src/media/audio/notifications/Castor.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Castor.ogg
-cp -a src/media/audio/notifications/CetiAlpha.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/CetiAlpha.ogg
-cp -a src/media/audio/notifications/Cobalt.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Cobalt.ogg
-cp -a src/media/audio/notifications/Cricket.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Cricket.ogg
-cp -a src/media/audio/notifications/DearDeer.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/DearDeer.ogg
-cp -a src/media/audio/notifications/Deneb.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Deneb.ogg
-cp -a src/media/audio/notifications/Doink.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Doink.ogg
-cp -a src/media/audio/notifications/DontPanic.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/DontPanic.ogg
-cp -a src/media/audio/notifications/Drip.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Drip.ogg
-cp -a src/media/audio/notifications/Electra.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Electra.ogg
-cp -a src/media/audio/notifications/F1_MissedCall.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/F1_MissedCall.ogg
-cp -a src/media/audio/notifications/F1_New_MMS.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/F1_New_MMS.ogg
-cp -a src/media/audio/notifications/F1_New_SMS.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/F1_New_SMS.ogg
-cp -a src/media/audio/notifications/Fluorine.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Fluorine.ogg
-cp -a src/media/audio/notifications/Fomalhaut.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Fomalhaut.ogg
-cp -a src/media/audio/notifications/Gallium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Gallium.ogg
-cp -a src/media/audio/notifications/Heaven.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Heaven.ogg
-cp -a src/media/audio/notifications/Helium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Helium.ogg
-cp -a src/media/audio/notifications/Highwire.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Highwire.ogg
-cp -a src/media/audio/notifications/Iridium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Iridium.ogg
-cp -a src/media/audio/notifications/Krypton.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Krypton.ogg
-cp -a src/media/audio/notifications/KzurbSonar.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/KzurbSonar.ogg
-cp -a src/media/audio/notifications/Merope.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Merope.ogg
-cp -a src/media/audio/notifications/moonbeam.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/moonbeam.ogg
-cp -a src/media/audio/notifications/OnTheHunt.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/OnTheHunt.ogg
-cp -a src/media/audio/notifications/Palladium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Palladium.ogg
-cp -a src/media/audio/notifications/pixiedust.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/pixiedust.ogg
-cp -a src/media/audio/notifications/pizzicato.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/pizzicato.ogg
-cp -a src/media/audio/notifications/Plastic_Pipe.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Plastic_Pipe.ogg
-cp -a src/media/audio/notifications/Polaris.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Polaris.ogg
-cp -a src/media/audio/notifications/Pollux.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Pollux.ogg
-cp -a src/media/audio/notifications/Procyon.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Procyon.ogg
-cp -a src/media/audio/notifications/Radon.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Radon.ogg
-cp -a src/media/audio/notifications/regulus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/regulus.ogg
-cp -a src/media/audio/notifications/Rubidium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Rubidium.ogg
-cp -a src/media/audio/notifications/Selenium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Selenium.ogg
-cp -a src/media/audio/notifications/sirius.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/sirius.ogg
-cp -a src/media/audio/notifications/Sirrah.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Sirrah.ogg
-cp -a src/media/audio/notifications/SpaceSeed.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/SpaceSeed.ogg
-cp -a src/media/audio/notifications/Strontium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Strontium.ogg
-cp -a src/media/audio/notifications/TaDa.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/TaDa.ogg
-cp -a src/media/audio/notifications/Thallium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Thallium.ogg
-cp -a src/media/audio/notifications/Tinkerbell.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Tinkerbell.ogg
-cp -a src/media/audio/notifications/tweeters.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/tweeters.ogg
-cp -a src/media/audio/notifications/vega.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/vega.ogg
-cp -a src/media/audio/notifications/Voila.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Voila.ogg
-cp -a src/media/audio/notifications/Xenon.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Xenon.ogg
-cp -a src/media/audio/notifications/Zirconium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/notifications/Zirconium.ogg
-cp -a src/media/audio/ringtones/ANDROMEDA.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/ANDROMEDA.ogg
-cp -a src/media/audio/ringtones/Aquila.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Aquila.ogg
-cp -a src/media/audio/ringtones/ArgoNavis.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/ArgoNavis.ogg
-cp -a src/media/audio/ringtones/Backroad.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Backroad.ogg
-cp -a src/media/audio/ringtones/BeatPlucker.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/BeatPlucker.ogg
-cp -a src/media/audio/ringtones/BentleyDubs.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/BentleyDubs.ogg
-cp -a src/media/audio/ringtones/Big_Easy.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Big_Easy.ogg
-cp -a src/media/audio/ringtones/BirdLoop.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/BirdLoop.ogg
-cp -a src/media/audio/ringtones/Bollywood.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Bollywood.ogg
-cp -a src/media/audio/ringtones/BOOTES.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/BOOTES.ogg
-cp -a src/media/audio/ringtones/BussaMove.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/BussaMove.ogg
-cp -a src/media/audio/ringtones/Cairo.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Cairo.ogg
-cp -a src/media/audio/ringtones/Calypso_Steel.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Calypso_Steel.ogg
-cp -a src/media/audio/ringtones/CANISMAJOR.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/CANISMAJOR.ogg
-cp -a src/media/audio/ringtones/CaribbeanIce.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/CaribbeanIce.ogg
-cp -a src/media/audio/ringtones/Carina.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Carina.ogg
-cp -a src/media/audio/ringtones/CASSIOPEIA.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/CASSIOPEIA.ogg
-cp -a src/media/audio/ringtones/Centaurus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Centaurus.ogg
-cp -a src/media/audio/ringtones/Champagne_Edition.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Champagne_Edition.ogg
-cp -a src/media/audio/ringtones/Club_Cubano.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Club_Cubano.ogg
-cp -a src/media/audio/ringtones/CrayonRock.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/CrayonRock.ogg
-cp -a src/media/audio/ringtones/CrazyDream.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/CrazyDream.ogg
-cp -a src/media/audio/ringtones/CurveBall.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/CurveBall.ogg
-cp -a src/media/audio/ringtones/Cygnus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Cygnus.ogg
-cp -a src/media/audio/ringtones/DancinFool.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/DancinFool.ogg
-cp -a src/media/audio/ringtones/Ding.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Ding.ogg
-cp -a src/media/audio/ringtones/DonMessWivIt.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/DonMessWivIt.ogg
-cp -a src/media/audio/ringtones/Draco.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Draco.ogg
-cp -a src/media/audio/ringtones/DreamTheme.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/DreamTheme.ogg
-cp -a src/media/audio/ringtones/Eastern_Sky.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Eastern_Sky.ogg
-cp -a src/media/audio/ringtones/Enter_the_Nexus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Enter_the_Nexus.ogg
-cp -a src/media/audio/ringtones/Eridani.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Eridani.ogg
-cp -a src/media/audio/ringtones/EtherShake.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/EtherShake.ogg
-cp -a src/media/audio/ringtones/FreeFlight.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/FreeFlight.ogg
-cp -a src/media/audio/ringtones/FriendlyGhost.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/FriendlyGhost.ogg
-cp -a src/media/audio/ringtones/Funk_Yall.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Funk_Yall.ogg
-cp -a src/media/audio/ringtones/GameOverGuitar.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/GameOverGuitar.ogg
-cp -a src/media/audio/ringtones/Gimme_Mo_Town.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Gimme_Mo_Town.ogg
-cp -a src/media/audio/ringtones/Glacial_Groove.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Glacial_Groove.ogg
-cp -a src/media/audio/ringtones/Growl.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Growl.ogg
-cp -a src/media/audio/ringtones/HalfwayHome.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/HalfwayHome.ogg
-cp -a src/media/audio/ringtones/hydra.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/hydra.ogg
-cp -a src/media/audio/ringtones/InsertCoin.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/InsertCoin.ogg
-cp -a src/media/audio/ringtones/LoopyLounge.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/LoopyLounge.ogg
-cp -a src/media/audio/ringtones/LoveFlute.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/LoveFlute.ogg
-cp -a src/media/audio/ringtones/Lyra.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Lyra.ogg
-cp -a src/media/audio/ringtones/Machina.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Machina.ogg
-cp -a src/media/audio/ringtones/MidEvilJaunt.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/MidEvilJaunt.ogg
-cp -a src/media/audio/ringtones/MildlyAlarming.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/MildlyAlarming.ogg
-cp -a src/media/audio/ringtones/Nairobi.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Nairobi.ogg
-cp -a src/media/audio/ringtones/Nassau.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Nassau.ogg
-cp -a src/media/audio/ringtones/NewPlayer.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/NewPlayer.ogg
-cp -a src/media/audio/ringtones/Noises1.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Noises1.ogg
-cp -a src/media/audio/ringtones/Noises2.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Noises2.ogg
-cp -a src/media/audio/ringtones/Noises3.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Noises3.ogg
-cp -a src/media/audio/ringtones/No_Limits.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/No_Limits.ogg
-cp -a src/media/audio/ringtones/OrganDub.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/OrganDub.ogg
-cp -a src/media/audio/ringtones/Orion.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Orion.ogg
-cp -a src/media/audio/ringtones/Paradise_Island.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Paradise_Island.ogg
-cp -a src/media/audio/ringtones/Pegasus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Pegasus.ogg
-cp -a src/media/audio/ringtones/PERSEUS.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/PERSEUS.ogg
-cp -a src/media/audio/ringtones/Playa.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Playa.ogg
-cp -a src/media/audio/ringtones/Pyxis.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Pyxis.ogg
-cp -a src/media/audio/ringtones/Revelation.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Revelation.ogg
-cp -a src/media/audio/ringtones/Rigel.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Rigel.ogg
-cp -a src/media/audio/ringtones/Ring_Classic_02.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Ring_Classic_02.ogg
-cp -a src/media/audio/ringtones/Ring_Digital_02.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Ring_Digital_02.ogg
-cp -a src/media/audio/ringtones/Ring_Synth_02.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Ring_Synth_02.ogg
-cp -a src/media/audio/ringtones/Ring_Synth_04.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Ring_Synth_04.ogg
-cp -a src/media/audio/ringtones/Road_Trip.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Road_Trip.ogg
-cp -a src/media/audio/ringtones/RomancingTheTone.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/RomancingTheTone.ogg
-cp -a src/media/audio/ringtones/Safari.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Safari.ogg
-cp -a src/media/audio/ringtones/Savannah.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Savannah.ogg
-cp -a src/media/audio/ringtones/Scarabaeus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Scarabaeus.ogg
-cp -a src/media/audio/ringtones/Sceptrum.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Sceptrum.ogg
-cp -a src/media/audio/ringtones/Seville.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Seville.ogg
-cp -a src/media/audio/ringtones/Shes_All_That.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Shes_All_That.ogg
-cp -a src/media/audio/ringtones/SilkyWay.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/SilkyWay.ogg
-cp -a src/media/audio/ringtones/SitarVsSitar.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/SitarVsSitar.ogg
-cp -a src/media/audio/ringtones/Solarium.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Solarium.ogg
-cp -a src/media/audio/ringtones/SpringyJalopy.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/SpringyJalopy.ogg
-cp -a src/media/audio/ringtones/Steppin_Out.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Steppin_Out.ogg
-cp -a src/media/audio/ringtones/Terminated.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Terminated.ogg
-cp -a src/media/audio/ringtones/Testudo.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Testudo.ogg
-cp -a src/media/audio/ringtones/Third_Eye.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Third_Eye.ogg
-cp -a src/media/audio/ringtones/Thunderfoot.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Thunderfoot.ogg
-cp -a src/media/audio/ringtones/TwirlAway.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/TwirlAway.ogg
-cp -a src/media/audio/ringtones/URSAMINOR.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/URSAMINOR.ogg
-cp -a src/media/audio/ringtones/VeryAlarmed.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/VeryAlarmed.ogg
-cp -a src/media/audio/ringtones/Vespa.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/Vespa.ogg
-cp -a src/media/audio/ringtones/World.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ringtones/World.ogg
-cp -a src/media/audio/ui/camera_click.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/camera_click.ogg
-cp -a src/media/audio/ui/camera_focus.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/camera_focus.ogg
-cp -a src/media/audio/ui/Dock.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/Dock.ogg
-cp -a src/media/audio/ui/Effect_Tick.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/Effect_Tick.ogg
-cp -a src/media/audio/ui/KeypressDelete.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/KeypressDelete.ogg
-cp -a src/media/audio/ui/KeypressReturn.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/KeypressReturn.ogg
-cp -a src/media/audio/ui/KeypressSpacebar.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/KeypressSpacebar.ogg
-cp -a src/media/audio/ui/KeypressStandard.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/KeypressStandard.ogg
-cp -a src/media/audio/ui/Lock.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/Lock.ogg
-cp -a src/media/audio/ui/LowBattery.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/LowBattery.ogg
-cp -a src/media/audio/ui/Undock.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/Undock.ogg
-cp -a src/media/audio/ui/Unlock.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/Unlock.ogg
-cp -a src/media/audio/ui/VideoRecord.ogg ../../../device/$VENDOR/$DEVICE/proprietary/media/audio/ui/VideoRecord.ogg
-cp -a src/usr/idc/ak4187-TouchScreen.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/ak4187-TouchScreen.idc
-cp -a src/usr/idc/Goodix-TouchScreen.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/Goodix-TouchScreen.idc
+
 cp -a src/usr/idc/qwerty.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/qwerty.idc
 cp -a src/usr/idc/qwerty2.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/qwerty2.idc
-cp -a src/usr/idc/tcc-ts.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/tcc-ts.idc
-cp -a src/usr/idc/tcc-ts-goodix-cap.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/tcc-ts-goodix-cap.idc
-cp -a src/usr/idc/tcc-ts-sitronix.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/tcc-ts-sitronix.idc
+cp -a src/usr/idc/touchscreen.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/touchscreen.idc
+cp -a src/usr/idc/Waltop.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/Waltop.idc
 cp -a src/usr/keychars/Generic.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/Generic.kcm
 cp -a src/usr/keychars/qwerty.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/qwerty.kcm
 cp -a src/usr/keychars/qwerty2.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/qwerty2.kcm
 cp -a src/usr/keychars/Virtual.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/Virtual.kcm
+
 cp -a src/usr/keylayout/AVRCP.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/AVRCP.kl
 cp -a src/usr/keylayout/Generic.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Generic.kl
 cp -a src/usr/keylayout/qwerty.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/qwerty.kl
+cp -a src/usr/keylayout/rk29-keypad.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/rk29-keypad.kl
+
 cp -a src/usr/keylayout/Vendor_05ac_Product_0239.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_05ac_Product_0239.kl
 cp -a src/usr/keylayout/Vendor_22b8_Product_093d.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_22b8_Product_093d.kl
 cp -a src/usr/keylayout/Vendor_045e_Product_028e.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_045e_Product_028e.kl
@@ -448,26 +527,96 @@ cp -a src/usr/keylayout/Vendor_046d_Product_c294.kl ../../../device/$VENDOR/$DEV
 cp -a src/usr/keylayout/Vendor_046d_Product_c299.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_046d_Product_c299.kl
 cp -a src/usr/keylayout/Vendor_046d_Product_c532.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_046d_Product_c532.kl
 cp -a src/usr/keylayout/Vendor_054c_Product_0268.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_054c_Product_0268.kl
+
+cp -a src/usr/share/alsa/alsa.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/alsa.conf
+cp -a src/usr/share/alsa/cards/aliases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/cards/aliases.conf
+cp -a src/usr/share/alsa/init/00main ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/00main
+cp -a src/usr/share/alsa/init/default ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/default
+cp -a src/usr/share/alsa/init/hda ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/hda
+cp -a src/usr/share/alsa/init/help ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/help
+cp -a src/usr/share/alsa/init/info ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/info
+cp -a src/usr/share/alsa/init/test ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/test
+
+cp -a src/usr/share/alsa/pcm/center_lfe.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/center_lfe.conf
+cp -a src/usr/share/alsa/pcm/default.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/default.conf
+cp -a src/usr/share/alsa/pcm/dmix.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/dmix.conf
+cp -a src/usr/share/alsa/pcm/dpl.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/dpl.conf
+cp -a src/usr/share/alsa/pcm/dsnoop.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/dsnoop.conf
+cp -a src/usr/share/alsa/pcm/front.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/front.conf
+cp -a src/usr/share/alsa/pcm/iec958.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/iec958.conf
+cp -a src/usr/share/alsa/pcm/modem.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/modem.conf
+cp -a src/usr/share/alsa/pcm/rear.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/rear.conf
+cp -a src/usr/share/alsa/pcm/side.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/side.conf
+cp -a src/usr/share/alsa/pcm/surround40.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround40.conf
+cp -a src/usr/share/alsa/pcm/surround41.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround41.conf
+cp -a src/usr/share/alsa/pcm/surround50.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround50.conf
+cp -a src/usr/share/alsa/pcm/surround51.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround51.conf
+cp -a src/usr/share/alsa/pcm/surround71.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround71.conf
+
+
 cp -a src/usr/share/zoneinfo/zoneinfo.dat ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/zoneinfo/zoneinfo.dat
 cp -a src/usr/share/zoneinfo/zoneinfo.idx ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/zoneinfo/zoneinfo.idx
 cp -a src/usr/share/zoneinfo/zoneinfo.version ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/zoneinfo/zoneinfo.version
-cp -a src/usr/srec/config/en.us/baseline.par ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/baseline.par
-cp -a src/usr/srec/config/en.us/baseline8k.par ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/baseline8k.par
-cp -a src/usr/srec/config/en.us/baseline11k.par ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/baseline11k.par
-cp -a src/usr/srec/config/en.us/dictionary/basic.ok ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/dictionary/basic.ok
-cp -a src/usr/srec/config/en.us/dictionary/cmu6plus.ok.zip ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/dictionary/cmu6plus.ok.zip
-cp -a src/usr/srec/config/en.us/dictionary/enroll.ok ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/dictionary/enroll.ok
-cp -a src/usr/srec/config/en.us/g2p/en-US-ttp.data ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/g2p/en-US-ttp.data
-cp -a src/usr/srec/config/en.us/grammars/boolean.g2g ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/grammars/boolean.g2g
-cp -a src/usr/srec/config/en.us/grammars/phone_type_choice.g2g ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/grammars/phone_type_choice.g2g
-cp -a src/usr/srec/config/en.us/grammars/VoiceDialer.g2g ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/grammars/VoiceDialer.g2g
-cp -a src/usr/srec/config/en.us/models/generic.swiarb ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic.swiarb
-cp -a src/usr/srec/config/en.us/models/generic8.lda ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic8.lda
-cp -a src/usr/srec/config/en.us/models/generic8_f.swimdl ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic8_f.swimdl
-cp -a src/usr/srec/config/en.us/models/generic8_m.swimdl ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic8_m.swimdl
-cp -a src/usr/srec/config/en.us/models/generic11.lda ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic11.lda
-cp -a src/usr/srec/config/en.us/models/generic11_f.swimdl ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic11_f.swimdl
-cp -a src/usr/srec/config/en.us/models/generic11_m.swimdl ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/config/en.us/models/generic11_m.swimdl
+
+cp -a src/usr/srec/en-US/acoustic_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/acoustic_model
+cp -a src/usr/srec/en-US/c_fst ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/c_fst
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+
+#Verder aanpassen:
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
+
+cp -a src/usr/xt9/config/databases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/config/databases.conf
+cp -a src/usr/xt9/config/phone.databases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/config/phone.databases.conf
+cp -a src/usr/xt9/config/seven_inch_pad.databases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/config/seven_inch_pad.databases.conf
+cp -a src/usr/xt9/databases/hwr/HK/cjk_HK_std_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/hwr/HK/cjk_HK_std_le.hdb
+cp -a src/usr/xt9/databases/hwr/PRC/cjk_S_gb18030_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/hwr/PRC/cjk_S_gb18030_le.hdb
+
+#Verder nakijken 57 files.
+cp -a src/usr/xt9/databases/kdb/cjk_S_gb18030_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/cjk_S_gb18030_le.hdb
+
+#Verder nakijken 27 files.
+cp -a src/usr/xt9/databases/ldb/cjk_S_gb18030_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/cjk_S_gb18030_le.hdb
+
+#Klaar:
+cp -a src/usr/xt9/databases/mdb/DE.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/DE.txt
+cp -a src/usr/xt9/databases/mdb/EN.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/EN.txt
+cp -a src/usr/xt9/databases/mdb/ES.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/ES.txt
+cp -a src/usr/xt9/databases/mdb/FR.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/FR.txt
+cp -a src/usr/xt9/databases/mdb/IT.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/IT.txt
+
+#8files:
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
+
 cp -a src/vendor/lib/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libMali.so
 cp -a src/vendor/lib/libstagefrighthw.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libstagefrighthw.so
 cp -a src/vendor/lib/libTCC_CDK_AUDIO.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libTCC_CDK_AUDIO.so
@@ -481,9 +630,19 @@ cp -a src/vendor/lib/egl/libGLESv1_CM_mali.so ../../../device/$VENDOR/$DEVICE/pr
 cp -a src/vendor/lib/egl/libGLESv2_mali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/egl/libGLESv2_mali.so
 cp -a src/vendor/lib/hw/gralloc.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/hw/gralloc.tcc892x.so
 cp -a src/vendor/lib/hw/hwcomposer.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/hw/hwcomposer.tcc892x.so
-cp -a src/wifi/wlan.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/wlan.ko
+
+cp -a src/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
+cp -a src/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
+cp -a src/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin
+cp -a src/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin
+cp -a src/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin
+cp -a src/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin
+cp -a src/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
+
 cp -a src/xbin/dexdump ../../../device/$VENDOR/$DEVICE/proprietary/xbin/dexdump
-cp -a src/xbin/librank ../../../device/$VENDOR/$DEVICE/proprietary/xbin/librank
-cp -a src/xbin/procmem ../../../device/$VENDOR/$DEVICE/proprietary/xbin/procmem
+cp -a src/xbin/hciconfig ../../../device/$VENDOR/$DEVICE/proprietary/xbin/hciconfig
+cp -a src/xbin/hcidump ../../../device/$VENDOR/$DEVICE/proprietary/xbin/hcidump
+cp -a src/xbin/hcitool ../../../device/$VENDOR/$DEVICE/proprietary/xbin/hcitool
+cp -a src/xbin/io ../../../device/$VENDOR/$DEVICE/proprietary/xbin/io
 #EOF
 ./setup-makefiles.sh
