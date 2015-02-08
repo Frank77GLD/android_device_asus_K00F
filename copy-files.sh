@@ -22,9 +22,8 @@ DEVICE=K00F
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/bin
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/dhcpcd/dhcpcd-hooks
-mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware
-mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/Splendid/LUT
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/updatecmds
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/usb_modeswitch.d
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions
@@ -60,10 +59,13 @@ mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/etc
-mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/drm
-mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7
-mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/xbin
 
@@ -94,9 +96,7 @@ cp -a src/bin/dumpsys ../../../device/$VENDOR/$DEVICE/proprietary/bin/dumpsys
 cp -a src/bin/e2fsck ../../../device/$VENDOR/$DEVICE/proprietary/bin/e2fsck
 cp -a src/bin/exfatck ../../../device/$VENDOR/$DEVICE/proprietary/bin/exfatck
 cp -a src/bin/exfatlabel ../../../device/$VENDOR/$DEVICE/proprietary/bin/exfatlabel
-cp -a src/bin/exfatlabelexfatlabel ../../../device/$VENDOR/$DEVICE/proprietary/bin/exfatlabel
 cp -a src/bin/fsck_msdos ../../../device/$VENDOR/$DEVICE/proprietary/bin/fsck_msdos
-cp -a src/bin/flash_eraseall ../../../device/$VENDOR/$DEVICE/proprietary/bin/flash_eraseall
 cp -a src/bin/GammaSetting ../../../device/$VENDOR/$DEVICE/proprietary/bin/GammaSetting
 cp -a src/bin/getevent ../../../device/$VENDOR/$DEVICE/proprietary/bin/getevent
 cp -a src/bin/getprop ../../../device/$VENDOR/$DEVICE/proprietary/bin/getprop
@@ -140,7 +140,6 @@ cp -a src/bin/mdnsd ../../../device/$VENDOR/$DEVICE/proprietary/bin/mdnsd
 cp -a src/bin/mediaserver ../../../device/$VENDOR/$DEVICE/proprietary/bin/mediaserver
 cp -a src/bin/mkdir ../../../device/$VENDOR/$DEVICE/proprietary/bin/mkdir
 cp -a src/bin/mkexfat ../../../device/$VENDOR/$DEVICE/proprietary/bin/mkexfat
-cp -a src/bin/mem ../../../device/$VENDOR/$DEVICE/proprietary/bin/mem
 cp -a src/bin/mkntfs ../../../device/$VENDOR/$DEVICE/proprietary/bin/mkntfs
 cp -a src/bin/mksh ../../../device/$VENDOR/$DEVICE/proprietary/bin/mksh
 cp -a src/bin/monkey ../../../device/$VENDOR/$DEVICE/proprietary/bin/monkey
@@ -199,7 +198,6 @@ cp -a src/bin/surfaceflinger ../../../device/$VENDOR/$DEVICE/proprietary/bin/sur
 cp -a src/bin/svc ../../../device/$VENDOR/$DEVICE/proprietary/bin/svc
 cp -a src/bin/sync ../../../device/$VENDOR/$DEVICE/proprietary/bin/sync
 cp -a src/bin/system_server ../../../device/$VENDOR/$DEVICE/proprietary/bin/system_server
-cp -a src/bin/setup_fs ../../../device/$VENDOR/$DEVICE/proprietary/bin/setup_fs
 cp -a src/bin/tc ../../../device/$VENDOR/$DEVICE/proprietary/bin/tc
 cp -a src/bin/texfatdebug ../../../device/$VENDOR/$DEVICE/proprietary/bin/texfatdebug
 cp -a src/bin/texfatinfo ../../../device/$VENDOR/$DEVICE/proprietary/bin/texfatinfo
@@ -252,49 +250,50 @@ cp -a src/etc/spn-conf.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/spn-c
 cp -a src/etc/system_fonts.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/system_fonts.xml
 cp -a src/etc/videoplay.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/videoplay.sh
 cp -a src/etc/vold.fstab ../../../device/$VENDOR/$DEVICE/proprietary/etc/vold.fstab
-cp -a src/etc/web_browsing ../../../device/$VENDOR/$DEVICE/proprietary/etc/web_browsing
+cp -a src/etc/web_browsing.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/web_browsing.sh
 cp -a src/etc/bluetooth/auto_pair_devlist.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/auto_pair_devlist.conf
 cp -a src/etc/bluetooth/bt_did.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/bt_did.conf
 cp -a src/etc/bluetooth/bt_did.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/bt_did.conf
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
+cp -a src/etc/firmware/fw_bcm4330.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_bcm4330.bin
+cp -a src/etc/firmware/fw_bcm4330_apsta.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_bcm4330_apsta.bin
+cp -a src/etc/firmware/fw_RK901.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK901.bin
+cp -a src/etc/firmware/fw_RK901a0.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK901a0.bin
+cp -a src/etc/firmware/fw_RK901a0_apsta.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK901a0_apsta.bin
+cp -a src/etc/firmware/fw_RK901a2.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK901a2.bin
+cp -a src/etc/firmware/fw_RK901a2_apsta.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK901a2_apsta.bin
+cp -a src/etc/firmware/fw_RK901a2_p2p.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK901a2_p2p.bin
+cp -a src/etc/firmware/fw_RK903.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903.bin
+cp -a src/etc/firmware/fw_RK903_ag.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903_ag.bin
+cp -a src/etc/firmware/fw_RK903_ag_apsta.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903_ag_apsta.bin
+cp -a src/etc/firmware/fw_RK903_ag_p2p.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903_ag_p2p.bin
+cp -a src/etc/firmware/fw_RK903b2.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903b2.bin
+cp -a src/etc/firmware/fw_RK903b2_apsta.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903b2_apsta.bin
+cp -a src/etc/firmware/fw_RK903b2_p2p.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903b2_p2p.bin
+cp -a src/etc/firmware/fw_RK903_p2p.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/fw_RK903_p2p.bin
+cp -a src/etc/firmware/icatch7002boot.bin ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/icatch7002boot.bin
+cp -a src/etc/firmware/MTK_MT6622_E2_Patch.nb0 ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/MTK_MT6622_E2_Patch.nb0
+cp -a src/etc/firmware/nvram.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram.txt
+cp -a src/etc/firmware/nvram_4330.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_4330.txt
+cp -a src/etc/firmware/nvram_AP6181.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_AP6181.txt
+cp -a src/etc/firmware/nvram_AP6210.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_AP6210.txt
+cp -a src/etc/firmware/nvram_AP6330.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_AP6330.txt
+cp -a src/etc/firmware/nvram_AP6476.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_AP6476.txt
+cp -a src/etc/firmware/nvram_AP6493.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_AP6493.txt
+cp -a src/etc/firmware/nvram_B23.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_B23.txt
+cp -a src/etc/firmware/nvram_GB86302I.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_GB86302I.txt
+cp -a src/etc/firmware/nvram_RK901.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK901.txt
+cp -a src/etc/firmware/nvram_RK903.cal ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903.cal
+cp -a src/etc/firmware/nvram_RK903.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903.txt
+cp -a src/etc/firmware/nvram_RK903.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903.txt
+cp -a src/etc/firmware/otp.bin.z77 ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/otp.bin.z77
+cp -a src/etc/firmware/RT2870AP.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT2870AP.dat
+cp -a src/etc/firmware/RT2870APCard.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT2870APCard.dat
+cp -a src/etc/firmware/RT2870STA.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT2870STA.dat
+cp -a src/etc/firmware/RT2870STACard.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT2870STACard.dat
+cp -a src/etc/firmware/RT5370AP.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT5370AP.dat
+cp -a src/etc/firmware/RT5370STA.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT5370STA.dat
+cp -a src/etc/firmware/WIFI_RAM_CODE ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/WIFI_RAM_CODE
 cp -a src/etc/firmware/rtlbt/rtlbt_config ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_config
 cp -a src/etc/firmware/rtlbt/rtlbt_fw ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_fw
 cp -a src/etc/firmware/Splendid/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/asussplendid_config.xml
@@ -321,8 +320,7 @@ cp -a src/etc/firmware/Splendid/LUT/LUT_W07.txt ../../../device/$VENDOR/$DEVICE/
 cp -a src/etc/firmware/Splendid/LUT/LUT_W08.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W08.txt
 cp -a src/etc/firmware/Splendid/LUT/LUT_W09.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W09.txt
 cp -a src/etc/firmware/Splendid/LUT/LUT_W10.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W10.txt
-cp -a src/etc/permissions/
-android.hardware.location.gps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.gps.xml
+cp -a src/etc/permissions/android.hardware.location.gps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.gps.xml
 cp -a src/etc/permissions/android.hardware.location.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.xml
 cp -a src/etc/permissions/android.hardware.sensor.compass.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.sensor.compass.xml
 cp -a src/etc/permissions/android.hardware.wifi.direct.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.wifi.direct.xml
@@ -348,7 +346,7 @@ cp -a src/scripts/monkey/blacklist.txt ../../../device/$VENDOR/$DEVICE/proprieta
 cp -a src/scripts/monkey/EmptyActivity.obj ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/EmptyActivity.obj
 cp -a src/scripts/monkey/monkey_sh ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_sh
 cp -a src/scripts/monkey/monkey_test_a ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_test_a
-cp -a src/scripts/monkey/monkey_test_b ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_test_b
+cp -a src/scripts/monkey/monkey_test_p ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/monkey_test_p
 cp -a src/scripts/monkey/package_list.txt ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/package_list.txt
 cp -a src/scripts/monkey/profiling ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/profiling
 cp -a src/scripts/monkey/TestIME.obj ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/TestIME.obj
@@ -361,11 +359,11 @@ cp -a src/lib/libandroid.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/liba
 cp -a src/lib/libandroid_runtime.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid_runtime.so
 cp -a src/lib/libandroid_servers.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid_servers.so
 cp -a src/lib/libaudioeffect_jni.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libaudioeffect_jni.so
-cp -a src/lib/libbcc.so.sha1 ../../../device/$VENDOR/$DEVICE/proprietary/lib/libbcc.so.sha1
+cp -a src/lib/libbcc.sha1.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libbcc.sha1.so
 cp -a src/lib/libstdc++.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libstdc++.so
 cp -a src/lib/libstlport.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libstlport.so
 cp -a src/lib/libsurfaceflinger.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libsurfaceflinger.so
-cp -a src/lib/libsurfaceflinger_client.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libsurfaceflinger_client.so
+cp -a src/lib/libsurfaceflinger_ddmconnection.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libsurfaceflinger_ddmconnection.so
 cp -a src/lib/libwebcore.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libwebcore.so
 cp -a src/lib/libOpenMAXAL.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOpenMAXAL.so
 cp -a src/lib/libskia.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libskia.so
@@ -384,76 +382,25 @@ cp -a src/lib/libdvm.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libdvm.s
 cp -a src/lib/libaudioutils.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libaudioutils.so
 cp -a src/lib/libwpa_client.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libwpa_client.so
 cp -a src/lib/libhardware_legacy.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libhardware_legacy.so
-cp -a src/lib/libextenddisplay.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libextenddisplay.so
-cp -a src/lib/libhdmi.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libhdmi.so
 cp -a src/lib/libhwui.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libhwui.so
-cp -a src/lib/libjni_googlepinyinime_4.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libjni_googlepinyinime_4.so
-cp -a src/lib/libjni_googlepinyinime_latinime_4.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libjni_googlepinyinime_latinime_4.so
 cp -a src/lib/libjnigraphics.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libjnigraphics.so
-cp -a src/lib/libmtdutils1.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libmtdutils1.so
-cp -a src/lib/libnvomxadaptor.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libnvomxadaptor.so
-cp -a src/lib/libOMX.TCC.aacdec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.aacdec.so
-cp -a src/lib/libOMX.TCC.aacenc.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.aacenc.so
-cp -a src/lib/libOMX.TCC.apedec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.apedec.so
-cp -a src/lib/libOMX.TCC.audio.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.audio.so
-cp -a src/lib/libOMX.TCC.base.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.base.so
-cp -a src/lib/libOMX.TCC.flacdec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.flacdec.so
-cp -a src/lib/libOMX.TCC.Google.vpxdec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.Google.vpxdec.so
-cp -a src/lib/libOMX.TCC.mp2dec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.mp2dec.so
-cp -a src/lib/libOMX.TCC.mp3dec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.mp3dec.so
-cp -a src/lib/libOMX.TCC.mp3enc.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.mp3enc.so
-cp -a src/lib/libOMX.TCC.pcmdec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.pcmdec.so
-cp -a src/lib/libOMX.TCC.radec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.radec.so
-cp -a src/lib/libOMX.TCC.spdif.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.spdif.so
-cp -a src/lib/libOMX.TCC.VideoDec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.VideoDec.so
-cp -a src/lib/libOMX.TCC.VideoEnc.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.VideoEnc.so
-cp -a src/lib/libOMX.TCC.vorbisdec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.vorbisdec.so
-cp -a src/lib/libOMX.TCC.VPUDec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.VPUDec.so
-cp -a src/lib/libOMX.TCC.VPUEnc.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.VPUEnc.so
-cp -a src/lib/libOMX.TCC.wmadec.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOMX.TCC.wmadec.so
-cp -a src/lib/libpcmhost_skype.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libpcmhost_skype.so
 cp -a src/lib/libOpenSLES.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libOpenSLES.so
-cp -a src/lib/libpagemap.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libpagemap.so
-cp -a src/lib/libpmap.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libpmap.so
 cp -a src/lib/libpower.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libpower.so
 cp -a src/lib/libpowermanager.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libpowermanager.so
 cp -a src/lib/libRS.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libRS.so
 cp -a src/lib/librs_jni.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs_jni.so
 cp -a src/lib/librtp_jni.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librtp_jni.so
 cp -a src/lib/libsqlite.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libsqlite.so
-cp -a src/lib/libTCC_ASF_DMX.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libTCC_ASF_DMX.so
-cp -a src/lib/libTCC_CDK_CONFIG.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libTCC_CDK_CONFIG.so
-cp -a src/lib/libTCC_Decoder.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libTCC_Decoder.so
-cp -a src/lib/libTCC_Encoder.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libTCC_Encoder.so
-cp -a src/lib/libtcc-evdo-ril.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libtcc-evdo-ril.so
-cp -a src/lib/libTCC_OMXCore.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libTCC_OMXCore.so
-cp -a src/lib/libTCC_RM_DMX.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libTCC_RM_DMX.so
-cp -a src/lib/libtcc-wcdma-ril.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libtcc-wcdma-ril.so
-cp -a src/lib/libtinyalsa.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libtinyalsa.so
-cp -a src/lib/libttspico.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libttspico.so
 cp -a src/lib/libutils.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libutils.so
 cp -a src/lib/libvideochat_jni.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libvideochat_jni.so
-cp -a src/lib/libvideochat_stabilize.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libvideochat_stabilize.so
 cp -a src/lib/libvideoeditor_jni.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libvideoeditor_jni.so
 cp -a src/lib/libvideoeditorplayer.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libvideoeditorplayer.so
-cp -a src/lib/libvoicesearch.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libvoicesearch.so
 cp -a src/lib/libstagefright.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libstagefright.so
 cp -a src/lib/libstagefright_omx.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libstagefright_omx.so
-cp -a src/lib/libwnndict.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libwnndict.so
 cp -a src/lib/egl/egl.cfg ../../../device/$VENDOR/$DEVICE/proprietary/lib/egl/egl.cfg
 cp -a src/lib/egl/libGLES_android.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/egl/libGLES_android.so
-cp -a src/lib/hw/audio.primary.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/audio.primary.tcc892x.so
-cp -a src/lib/hw/camera.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/camera.goldfish.so
-cp -a src/lib/hw/camera.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/camera.tcc892x.so
-cp -a src/lib/hw/gps.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/gps.goldfish.so
-cp -a src/lib/hw/gps.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/gps.tcc892x.so
-cp -a src/lib/hw/lights.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/lights.tcc892x.so
-cp -a src/lib/hw/lights.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/lights.goldfish.so
-cp -a src/lib/hw/sensors.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/sensors.tcc892x.so
-cp -a src/lib/hw/sensors.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/sensors.goldfish.so
 cp -a src/lib/modules/mali.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/mali.ko
-cp -a src/lib/modules/mali.ko.3.0.36+ ../../../device/$VENDOR/
-$DEVICE/proprietary/lib/modules/mali.ko.3.0.36+
+cp -a src/lib/modules/mali.ko.3.0.36+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/mali.ko.3.0.36+
 cp -a src/lib/modules/rk29-ipp.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk29-ipp.ko
 cp -a src/lib/modules/rk29-ipp.ko.3.0.36+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk29-ipp.ko.3.0.36+
 cp -a src/lib/modules/rk30_mirroring.ko.3.0.8+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk30_mirroring.ko.3.0.8+
@@ -593,7 +540,7 @@ cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.danish.center.xml ../../..
 cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.english.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.english.center.xml
 cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.farsi.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.farsi.center.xml
 cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.finnish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.finnish.center.xml
-cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.greek.center.xml./../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.greek.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.greek.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.greek.center.xml
 cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.hebrew.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.hebrew.center.xml
 cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.norwegian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.norwegian.center.xml
 cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.russian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.russian.center.xml
