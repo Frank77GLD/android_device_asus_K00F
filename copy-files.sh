@@ -26,7 +26,7 @@ mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/Splendid/LUT
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/updatecmds
-#mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/usb_modeswitch.d
+mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/usb_modeswitch.d
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/etc/ril
@@ -219,71 +219,43 @@ cp -a src/bin/wfd ../../../device/$VENDOR/$DEVICE/proprietary/bin/wfd
 cp -a src/bin/whtest.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/whtest.sh
 cp -a src/bin/wipe ../../../device/$VENDOR/$DEVICE/proprietary/bin/wipe
 cp -a src/bin/wpa_supplicant ../../../device/$VENDOR/$DEVICE/proprietary/bin/wpa_supplicant
-
-
-
-alarm_filter.xml
-amazon-kindle.properties
-
-
+cp -a src/etc/alarm_filter.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/alarm_filter.xml
+cp -a src/etc/amazon-kindle.properties ../../../device/$VENDOR/$DEVICE/proprietary/etc/amazon-kindle.properties
 cp -a src/etc/apns-conf.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/apns-conf.xml
-
-asound.conf
-
+cp -a src/etc/asound.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/asound.conf
 cp -a src/etc/audio_effects.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/audio_effects.conf
-
-audio_effects_.mps
-audio_policy.conf
-cpu-balance.sh
-cpu-normal.sh
-cpu-power-saving.sh
-
-
+cp -a src/etc/audio_effects_.mps ../../../device/$VENDOR/$DEVICE/proprietary/etc/audio_effects_.mps
+cp -a src/etc/audio_policy.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/audio_policy.conf
+cp -a src/etc/cpu-balance.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/cpu-balance.sh
+cp -a src/etc/cpu-normal.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/cpu-normal.sh
+cp -a src/etc/cpu-power-saving.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/cpu-power-saving.sh
 cp -a src/etc/dbus.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/dbus.conf
-
-cp -a src/etc/dbus.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/dbus.conf
-
 cp -a src/etc/event-log-tags ../../../device/$VENDOR/$DEVICE/proprietary/etc/event-log-tags
 cp -a src/etc/fallback_fonts.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/fallback_fonts.xml
-
-floating-res.apk
-gps.conf
-gpsconfig.xml
-
-
+cp -a src/etc/floating-res.apk ../../../device/$VENDOR/$DEVICE/proprietary/etc/floating-res.apk
+cp -a src/etc/gps.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/gps.conf
+cp -a src/etc/gpsconfig.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/gpsconfig.xml
 cp -a src/etc/hosts ../../../device/$VENDOR/$DEVICE/proprietary/etc/hosts
-
-init.asus.audbg.sh
-
 cp -a src/etc/init.asus.audbg.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/init.asus.audbg.sh
 cp -a src/etc/init.goldfish.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/init.goldfish.sh
-
-libgps.conf
-media_codecs.xml
-
+cp -a src/etc/libgps.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/libgps.conf
+cp -a src/etc/media_codecs.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/media_codecs.xml
 cp -a src/etc/media_profiles.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/media_profiles.xml
 cp -a src/etc/mkshrc ../../../device/$VENDOR/$DEVICE/proprietary/etc/mkshrc
-
-NOTICE.html.gz
-operator_table
-packages-compat.xml
-packages-composer.xml
-performance_info.xml
-recovery-resource.dat
-spn-conf.xml
-
+cp -a src/etc/NOTICE.html.gz ../../../device/$VENDOR/$DEVICE/proprietary/etc/NOTICE.html.gz
+cp -a src/etc/operator_table ../../../device/$VENDOR/$DEVICE/proprietary/etc/operator_table
+cp -a src/etc/packages-compat.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/packages-compat.xml
+cp -a src/etc/packages-composer.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/packages-composer.xml
+cp -a src/etc/performance_info.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/performance_info.xml
+cp -a src/etc/recovery-resource.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/recovery-resource.dat
+cp -a src/etc/spn-conf.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/spn-conf.xml
 cp -a src/etc/system_fonts.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/system_fonts.xml
-
-videoplay.sh
-
+cp -a src/etc/videoplay.sh ../../../device/$VENDOR/$DEVICE/proprietary/etc/videoplay.sh
 cp -a src/etc/vold.fstab ../../../device/$VENDOR/$DEVICE/proprietary/etc/vold.fstab
-
-web_browsing
-
+cp -a src/etc/web_browsing ../../../device/$VENDOR/$DEVICE/proprietary/etc/web_browsing
 cp -a src/etc/bluetooth/auto_pair_devlist.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/auto_pair_devlist.conf
 cp -a src/etc/bluetooth/bt_did.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/bt_did.conf
 cp -a src/etc/bluetooth/bt_did.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/bluetooth/bt_did.conf
-
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
@@ -323,44 +295,32 @@ cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/pro
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
 cp -a src/etc/firmware/arcsoft_ff_config.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/arcsoft_ff_config.dat
-
-
-
-
 cp -a src/etc/firmware/rtlbt/rtlbt_config ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_config
 cp -a src/etc/firmware/rtlbt/rtlbt_fw ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_fw
-
-
-
-
 cp -a src/etc/firmware/Splendid/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/asussplendid_config.xml
-
-
 cp -a src/etc/firmware/Splendid/LUT/LUT_C01.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C01.txt
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-cp -a src/etc/firmware/Splendid/LUT/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/asussplendid_config.xml
-
-
+cp -a src/etc/firmware/Splendid/LUT/LUT_C02.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C02.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C03.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C03.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C04.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C04.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C05.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C05.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C06.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C06.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C07.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C07.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C08.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C08.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C09.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C09.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_C10.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C10.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_DEF.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_DEF.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_RdStrong.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_RdStrong.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_RdWeak.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_RdWeak.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W01.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W01.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W02.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W02.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W03.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W03.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W04.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W04.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W05.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W05.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W06.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W06.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W07.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W07.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W08.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W08.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W09.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W09.txt
+cp -a src/etc/firmware/Splendid/LUT/LUT_W10.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_W10.txt
 cp -a src/etc/permissions/
 android.hardware.location.gps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.gps.xml
 cp -a src/etc/permissions/android.hardware.location.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/android.hardware.location.xml
@@ -377,17 +337,12 @@ cp -a src/etc/permissions/platform.xml ../../../device/$VENDOR/$DEVICE/proprieta
 cp -a src/etc/permissions/rk-camera.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-camera.xml
 cp -a src/etc/permissions/rk-camera-front.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-camera-front.xml
 cp -a src/etc/permissions/rk-core.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-core.xml
-
 cp -a src/etc/ppp/call-pppd ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/call-pppd
 cp -a src/etc/ppp/ip-down ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/ip-down
 cp -a src/etc/ppp/ip-up ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/ip-up
 cp -a src/etc/ppp/ip-up-vpn ../../../device/$VENDOR/$DEVICE/proprietary/etc/ppp/ip-up-vpn
 cp -a src/etc/updatecmds/google_generic_update.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/updatecmds/google_generic_update.txt
-
-
 cp -a src/etc/usb_modeswitch.d/0ace_20ff ../../../device/$VENDOR/$DEVICE/proprietary/etc/usb_modeswitch.d/0ace_20ff
-OVERSLAAN?
-
 cp -a src/etc/wifi/wpa_supplicant.conf ../../../device/$VENDOR/$DEVICE/proprietary/etc/wifi/wpa_supplicant.conf
 cp -a src/scripts/monkey/blacklist.txt ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/blacklist.txt
 cp -a src/scripts/monkey/EmptyActivity.obj ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/EmptyActivity.obj
@@ -398,12 +353,10 @@ cp -a src/scripts/monkey/package_list.txt ../../../device/$VENDOR/$DEVICE/propri
 cp -a src/scripts/monkey/profiling ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/profiling
 cp -a src/scripts/monkey/TestIME.obj ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/TestIME.obj
 cp -a src/scripts/monkey/timer ../../../device/$VENDOR/$DEVICE/proprietary/scripts/monkey/timer
-
 cp -a src/framework/com.android.future.usb.accessory.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/com.android.future.usb.accessory.jar
 cp -a src/framework/com.google.android.maps.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/com.google.android.maps.jar
 cp -a src/framework/com.google.android.media.effects.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/com.google.android.media.effects.jar
 cp -a src/framework/send_bug.jar ../../../device/$VENDOR/$DEVICE/proprietary/framework/send_bug.jar
-
 cp -a src/lib/libandroid.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid.so
 cp -a src/lib/libandroid_runtime.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid_runtime.so
 cp -a src/lib/libandroid_servers.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libandroid_servers.so
@@ -498,13 +451,18 @@ cp -a src/lib/hw/lights.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/l
 cp -a src/lib/hw/lights.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/lights.goldfish.so
 cp -a src/lib/hw/sensors.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/sensors.tcc892x.so
 cp -a src/lib/hw/sensors.goldfish.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/hw/sensors.goldfish.so
-
-cp -a src/lib/modules/vpu_decoder.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_decoder.ko
-cp -a src/lib/modules/vpu_decoder_ext.ko ../../../device/$VENDOR/
-$DEVICE/proprietary/lib/modules/vpu_decoder_ext.ko
-cp -a src/lib/modules/vpu_encoder.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_encoder.ko
-cp -a src/lib/modules/vpu_manager.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_manager.ko
-
+cp -a src/lib/modules/mali.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/mali.ko
+cp -a src/lib/modules/mali.ko.3.0.36+ ../../../device/$VENDOR/
+$DEVICE/proprietary/lib/modules/mali.ko.3.0.36+
+cp -a src/lib/modules/rk29-ipp.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk29-ipp.ko
+cp -a src/lib/modules/rk29-ipp.ko.3.0.36+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk29-ipp.ko.3.0.36+
+cp -a src/lib/modules/rk30_mirroring.ko.3.0.8+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk30_mirroring.ko.3.0.8+
+cp -a src/lib/modules/rk30_mirroring.ko.3.0.36+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/rk30_mirroring.ko.3.0.36+
+cp -a src/lib/modules/ump.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/ump.ko
+cp -a src/lib/modules/ump.ko.3.0.36+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/ump.ko.3.0.36+
+cp -a src/lib/modules/vpu_service.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_service.ko
+cp -a src/lib/modules/vpu_service.ko.3.0.36+ ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/vpu_service.ko.3.0.36+
+cp -a src/lib/modules/wlan.ko ../../../device/$VENDOR/$DEVICE/proprietary/lib/modules/wlan.ko
 cp -a src/usr/idc/qwerty.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/qwerty.idc
 cp -a src/usr/idc/qwerty2.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/qwerty2.idc
 cp -a src/usr/idc/touchscreen.idc ../../../device/$VENDOR/$DEVICE/proprietary/usr/idc/touchscreen.idc
@@ -513,12 +471,10 @@ cp -a src/usr/keychars/Generic.kcm ../../../device/$VENDOR/$DEVICE/proprietary/u
 cp -a src/usr/keychars/qwerty.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/qwerty.kcm
 cp -a src/usr/keychars/qwerty2.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/qwerty2.kcm
 cp -a src/usr/keychars/Virtual.kcm ../../../device/$VENDOR/$DEVICE/proprietary/usr/keychars/Virtual.kcm
-
 cp -a src/usr/keylayout/AVRCP.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/AVRCP.kl
 cp -a src/usr/keylayout/Generic.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Generic.kl
 cp -a src/usr/keylayout/qwerty.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/qwerty.kl
 cp -a src/usr/keylayout/rk29-keypad.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/rk29-keypad.kl
-
 cp -a src/usr/keylayout/Vendor_05ac_Product_0239.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_05ac_Product_0239.kl
 cp -a src/usr/keylayout/Vendor_22b8_Product_093d.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_22b8_Product_093d.kl
 cp -a src/usr/keylayout/Vendor_045e_Product_028e.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_045e_Product_028e.kl
@@ -527,7 +483,6 @@ cp -a src/usr/keylayout/Vendor_046d_Product_c294.kl ../../../device/$VENDOR/$DEV
 cp -a src/usr/keylayout/Vendor_046d_Product_c299.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_046d_Product_c299.kl
 cp -a src/usr/keylayout/Vendor_046d_Product_c532.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_046d_Product_c532.kl
 cp -a src/usr/keylayout/Vendor_054c_Product_0268.kl ../../../device/$VENDOR/$DEVICE/proprietary/usr/keylayout/Vendor_054c_Product_0268.kl
-
 cp -a src/usr/share/alsa/alsa.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/alsa.conf
 cp -a src/usr/share/alsa/cards/aliases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/cards/aliases.conf
 cp -a src/usr/share/alsa/init/00main ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/00main
@@ -536,7 +491,6 @@ cp -a src/usr/share/alsa/init/hda ../../../device/$VENDOR/$DEVICE/proprietary/us
 cp -a src/usr/share/alsa/init/help ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/help
 cp -a src/usr/share/alsa/init/info ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/info
 cp -a src/usr/share/alsa/init/test ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/init/test
-
 cp -a src/usr/share/alsa/pcm/center_lfe.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/center_lfe.conf
 cp -a src/usr/share/alsa/pcm/default.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/default.conf
 cp -a src/usr/share/alsa/pcm/dmix.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/dmix.conf
@@ -552,85 +506,149 @@ cp -a src/usr/share/alsa/pcm/surround41.conf ../../../device/$VENDOR/$DEVICE/pro
 cp -a src/usr/share/alsa/pcm/surround50.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround50.conf
 cp -a src/usr/share/alsa/pcm/surround51.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround51.conf
 cp -a src/usr/share/alsa/pcm/surround71.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/alsa/pcm/surround71.conf
-
-
 cp -a src/usr/share/zoneinfo/zoneinfo.dat ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/zoneinfo/zoneinfo.dat
 cp -a src/usr/share/zoneinfo/zoneinfo.idx ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/zoneinfo/zoneinfo.idx
 cp -a src/usr/share/zoneinfo/zoneinfo.version ../../../device/$VENDOR/$DEVICE/proprietary/usr/share/zoneinfo/zoneinfo.version
-
 cp -a src/usr/srec/en-US/acoustic_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/acoustic_model
 cp -a src/usr/srec/en-US/c_fst ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/c_fst
 cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-
-#Verder aanpassen:
+cp -a src/usr/srec/en-US/acoustic_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/acoustic_model
+cp -a src/usr/srec/en-US/c_fst ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/c_fst
 cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-cp -a src/usr/srec/en-US/clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/clg
-
+cp -a src/usr/srec/en-US/compile_grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/compile_grammar.config
+cp -a src/usr/srec/en-US/contacts.abnf ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/contacts.abnf
+cp -a src/usr/srec/en-US/dict ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/dict
+cp -a src/usr/srec/en-US/dictation.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/dictation.config
+cp -a src/usr/srec/en-US/embed_phone_nn_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/embed_phone_nn_model
+cp -a src/usr/srec/en-US/embed_phone_nn_state_sym ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/embed_phone_nn_state_sym
+cp -a src/usr/srec/en-US/endpointer_dictation.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/endpointer_dictation.config
+cp -a src/usr/srec/en-US/endpointer_voicesearch.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/endpointer_voicesearch.config
+cp -a src/usr/srec/en-US/ep_acoustic_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/ep_acoustic_model
+cp -a src/usr/srec/en-US/g2p_fst ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/g2p_fst
+cp -a src/usr/srec/en-US/google_hotword.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword.config
+cp -a src/usr/srec/en-US/google_hotword.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword.config
+cp -a src/usr/srec/en-US/google_hotword_logistic ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword_logistic
+cp -a src/usr/srec/en-US/grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/grammar.config
+cp -a src/usr/srec/en-US/grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/grammar.config
+cp -a src/usr/srec/en-US/grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/grammar.config
+cp -a src/usr/srec/en-US/lintrans_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/lintrans_model
+cp -a src/usr/srec/en-US/metadata ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/metadata
+cp -a src/usr/srec/en-US/normalizer ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/normalizer
+cp -a src/usr/srec/en-US/norm_fst ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/norm_fst
+cp -a src/usr/srec/en-US/offensive_word_normalizer ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/offensive_word_normalizer
+cp -a src/usr/srec/en-US/phonelist ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/phonelist
+cp -a src/usr/srec/en-US/rescoring_lm ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/rescoring_lm
+cp -a src/usr/srec/en-US/symbols ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/symbols
 cp -a src/usr/xt9/config/databases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/config/databases.conf
 cp -a src/usr/xt9/config/phone.databases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/config/phone.databases.conf
 cp -a src/usr/xt9/config/seven_inch_pad.databases.conf ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/config/seven_inch_pad.databases.conf
 cp -a src/usr/xt9/databases/hwr/HK/cjk_HK_std_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/hwr/HK/cjk_HK_std_le.hdb
 cp -a src/usr/xt9/databases/hwr/PRC/cjk_S_gb18030_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/hwr/PRC/cjk_S_gb18030_le.hdb
-
-#Verder nakijken 57 files.
-cp -a src/usr/xt9/databases/kdb/cjk_S_gb18030_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/cjk_S_gb18030_le.hdb
-
-#Verder nakijken 27 files.
-cp -a src/usr/xt9/databases/ldb/cjk_S_gb18030_le.hdb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/cjk_S_gb18030_le.hdb
-
-#Klaar:
+cp -a src/usr/xt9/databases/kdb/azerty.french.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/azerty.french.center.xml
+cp -a src/usr/xt9/databases/kdb/chinese.bopomofo.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/chinese.bopomofo.xml
+cp -a src/usr/xt9/databases/kdb/chinese.cangjie.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/chinese.cangjie.xml
+cp -a src/usr/xt9/databases/kdb/chinese.pinyin.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/chinese.pinyin.xml
+cp -a src/usr/xt9/databases/kdb/chinese.stroke.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/chinese.stroke.xml
+cp -a src/usr/xt9/databases/kdb/phone.azerty.french.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.azerty.french.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.chinese.cangjie.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.cangjie.xml
+cp -a src/usr/xt9/databases/kdb/phone.chinese.pinyin.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.pinyin.xml
+cp -a src/usr/xt9/databases/kdb/phone.chinese.stroke.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.stroke.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.arabic.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.arabic.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.danish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.danish.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.english.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.english.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.farsi.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.farsi.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.finnish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.finnish.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.greek.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.greek.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.hebrew.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.hebrew.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.norwegian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.norwegian.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.russian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.russian.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.swedish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.swedish.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.thai.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.thai.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.ukrainian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.ukrainian.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwerty.ukrainian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwerty.ukrainian.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwertz.balkan.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwertz.balkan.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.qwertz.german.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.qwertz.german.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.arabic.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.arabic.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.danish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.danish.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.english.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.english.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.farsi.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.farsi.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.finnish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.finnish.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.greek.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.greek.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.hebrew.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.hebrew.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.norwegian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.norwegian.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.russian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.russian.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.swedish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.swedish.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.thai.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.thai.center.xml
+cp -a src/usr/xt9/databases/kdb/qwerty.ukrainian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwerty.ukrainian.center.xml
+cp -a src/usr/xt9/databases/kdb/qwertz.balkan.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwertz.balkan.center.xml
+cp -a src/usr/xt9/databases/kdb/qwertz.german.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/qwertz.german.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_azerty.french.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_azerty.french.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_chinese.bopomofo.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_chinese.bopomofo.xml
+cp -a src/usr/xt9/databases/kdb/azerty.french.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/azerty.french.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_chinese.cangjie.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_chinese.cangjie.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_chinese.pinyin.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_chinese.pinyin.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_chinese.stroke.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_chinese.stroke.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.arabic.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.arabic.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.danish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.danish.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.english.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.english.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.farsi.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.farsi.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.finnish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.finnish.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.greek.center.xml./../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.greek.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.hebrew.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.hebrew.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.norwegian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.norwegian.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.russian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.russian.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.swedish.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.swedish.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.thai.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.thai.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwerty.ukrainian.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwerty.ukrainian.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwertz.balkan.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwertz.balkan.center.xml
+cp -a src/usr/xt9/databases/kdb/seven_inch_pad_qwertz.german.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/seven_inch_pad_qwertz.german.center.xml
+cp -a src/usr/xt9/databases/ldb/ARlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ARlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/CSlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/CSlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/DAusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/DAusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/DEusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/DEusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/ELlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ELlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/ENubUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ENubUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/ESusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ESusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/FAlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/FAlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/FIusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/FIusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/FRusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/FRusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/HElsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/HElsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/HRlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/HRlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/HUlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/HUlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/ITusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ITusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/NLlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/NLlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/NOlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/NOlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/PLlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/PLlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/PTusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/PTusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/RUlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/RUlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/SKlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/SKlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/SLlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/SLlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/SRlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/SRlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/SVusUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/SVusUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/THlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/THlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/TRlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/TRlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/UKlsUN_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/UKlsUN_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/ZHsbUNps_GB18030_xt9_big.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ZHsbUNps_GB18030_xt9_big.ldb
+cp -a src/usr/xt9/databases/ldb/ZHtbUNps_Big5_bpmf_pinyin_CJ_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ZHtbUNps_Big5_bpmf_pinyin_CJ_xt9.ldb
+cp -a src/usr/xt9/databases/ldb/ZHtbUNps_Big5HKSCS_bpmf_pinyin_CJ_xt9.ldb ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/ldb/ZHtbUNps_Big5HKSCS_bpmf_pinyin_CJ_xt9.ldb
 cp -a src/usr/xt9/databases/mdb/DE.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/DE.txt
 cp -a src/usr/xt9/databases/mdb/EN.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/EN.txt
 cp -a src/usr/xt9/databases/mdb/ES.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/ES.txt
 cp -a src/usr/xt9/databases/mdb/FR.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/FR.txt
 cp -a src/usr/xt9/databases/mdb/IT.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/IT.txt
-
-#8files:
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-cp -a src/vendor/firmware/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/libMali.so
-
-cp -a src/vendor/lib/libMali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libMali.so
-cp -a src/vendor/lib/libstagefrighthw.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libstagefrighthw.so
-cp -a src/vendor/lib/libTCC_CDK_AUDIO.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libTCC_CDK_AUDIO.so
-cp -a src/vendor/lib/libTCC_CDK_LIB.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libTCC_CDK_LIB.so
-cp -a src/vendor/lib/libTCC_CDK_WRAPPER.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libTCC_CDK_WRAPPER.so
-cp -a src/vendor/lib/libTCCInterSubtitle.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libTCCInterSubtitle.so
-cp -a src/vendor/lib/libTCCsubtitle.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libTCCsubtitle.so
-cp -a src/vendor/lib/libUMP.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libUMP.so
-cp -a src/vendor/lib/egl/libEGL_mali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/egl/libEGL_mali.so
-cp -a src/vendor/lib/egl/libGLESv1_CM_mali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/egl/libGLESv1_CM_mali.so
-cp -a src/vendor/lib/egl/libGLESv2_mali.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/egl/libGLESv2_mali.so
-cp -a src/vendor/lib/hw/gralloc.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/hw/gralloc.tcc892x.so
-cp -a src/vendor/lib/hw/hwcomposer.tcc892x.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/hw/hwcomposer.tcc892x.so
-
+cp -a src/vendor/firmware/bcm2076b1.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm2076b1.hcd
+cp -a src/vendor/firmware/bcm4329.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm4329.hcd
+cp -a src/vendor/firmware/bcm20710a1.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm20710a1.hcd
+cp -a src/vendor/firmware/bcm40183b2.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm40183b2.hcd
+cp -a src/vendor/firmware/BCM4330B1.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/BCM4330B1.hcd
+cp -a src/vendor/firmware/nh660.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/nh660.hcd
+cp -a src/vendor/firmware/rk903.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/rk903.hcd
+cp -a src/vendor/firmware/rk903_26M.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/rk903_26M.hcd
+cp -a src/vendor/lib/libbt-vendor.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libbt-vendor.so
+cp -a src/vendor/lib/libwvdrm_L3.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libwvdrm_L3.so
+cp -a src/vendor/lib/libwvm.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libwvm.so
+cp -a src/vendor/lib/libWVStreamControlAPI_L3.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/libWVStreamControlAPI_L3.so
+cp -a src/vendor/lib/drm/libdrmwvmplugin.so ../../../device/$VENDOR/$DEVICE/proprietary/vendor/lib/drm/libdrmwvmplugin.so
 cp -a src/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
 cp -a src/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin
 cp -a src/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin
@@ -638,7 +656,6 @@ cp -a src/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi4
 cp -a src/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin
 cp -a src/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin
 cp -a src/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin
-
 cp -a src/xbin/dexdump ../../../device/$VENDOR/$DEVICE/proprietary/xbin/dexdump
 cp -a src/xbin/hciconfig ../../../device/$VENDOR/$DEVICE/proprietary/xbin/hciconfig
 cp -a src/xbin/hcidump ../../../device/$VENDOR/$DEVICE/proprietary/xbin/hcidump
