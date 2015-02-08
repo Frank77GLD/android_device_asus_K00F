@@ -3,7 +3,7 @@
 #With terminal cd into system. 
 #Make a list with files:
 #ls -R > /sdcard/filesprop.txt
-#What you change here change alsow in extract-files.sh ensetup-makefiles.sh
+# What you change here change alsow in extract-files.sh ensetup-makefiles.sh
 #Wat je hier aanpast ook in extract-files.sh ensetup-makefiles.sh aanpassen.
 
 #Folders
@@ -405,7 +405,7 @@ etc/updatecmds/google_generic_update.txt
 #0922_1001
 #0930_0d46
 #0ace_2011
-#0ace_20ff
+etc/usb_modeswitch.d/0ace_20ff
 #0af0_4007
 #0af0_6711
 #0af0_6731
@@ -656,80 +656,84 @@ etc/updatecmds/google_generic_update.txt
 #./etc/wifi/:
 etc/wifi/wpa_supplicant.conf
 
+#Nog in copy-files.sh zetten.
 #./fonts/:
-fonts/AdobeFonts
-fonts/AndroidClock.ttf
-fonts/AndroidClock_Highlight.ttf
-fonts/AndroidClock_Solid.ttf
-fonts/AndroidEmoji.ttf
-fonts/AnjaliNewLipi-light.ttf
-fonts/Clockopia.ttf
-fonts/DFP_Sc_Sans_Heue30_103.ttf
-fonts/DroidNaskh-Regular-SystemUI.ttf
-fonts/DroidNaskh-Regular.ttf
-fonts/DroidSans-Bold.ttf
-fonts/DroidSans.ttf
-fonts/DroidSansArmenian.ttf
-fonts/DroidSansDevanagari-Regular.ttf
-fonts/DroidSansEthiopic-Regular.ttf
-fonts/DroidSansFallback.ttf
-fonts/DroidSansGeorgian.ttf
-fonts/DroidSansHebrew-Bold.ttf
-fonts/DroidSansHebrew-Regular.ttf
-fonts/DroidSansMono.ttf
-fonts/DroidSansTamil-Bold.ttf
-fonts/DroidSansTamil-Regular.ttf
-fonts/DroidSansThai.ttf
-fonts/DroidSerif-Bold.ttf
-fonts/DroidSerif-BoldItalic.ttf
-fonts/DroidSerif-Italic.ttf
-fonts/DroidSerif-Regular.ttf
-fonts/Lohit-Bengali.ttf
-fonts/Lohit-Kannada.ttf
-fonts/Lohit-Telugu.ttf
-fonts/MTLmr3m.ttf
-fonts/NanumGothic.ttf
-fonts/Roboto-Bold.ttf
-fonts/Roboto-BoldItalic.ttf
-fonts/Roboto-Italic.ttf
-fonts/Roboto-Light.ttf
-fonts/Roboto-LightItalic.ttf
-fonts/Roboto-Regular.ttf
-fonts/Roboto-Thin.ttf
-fonts/Roboto-ThinItalic.ttf
-fonts/RobotoCondensed-Bold.ttf
-fonts/RobotoCondensed-BoldItalic.ttf
-fonts/RobotoCondensed-Italic.ttf
-fonts/RobotoCondensed-Regular.ttf
-fonts/hkgcsh00d.ttf
+#fonts/AdobeFonts
+#fonts/AndroidClock.ttf
+#fonts/AndroidClock_Highlight.ttf
+#fonts/AndroidClock_Solid.ttf
+#fonts/AndroidEmoji.ttf
+#fonts/AnjaliNewLipi-light.ttf
+#fonts/Clockopia.ttf
+#fonts/DFP_Sc_Sans_Heue30_103.ttf
+#fonts/DroidNaskh-Regular-SystemUI.ttf
+#fonts/DroidNaskh-Regular.ttf
+#fonts/DroidSans-Bold.ttf
+#fonts/DroidSans.ttf
+#fonts/DroidSansArmenian.ttf
+#fonts/DroidSansDevanagari-Regular.ttf
+#fonts/DroidSansEthiopic-Regular.ttf
+#fonts/DroidSansFallback.ttf
+#fonts/DroidSansGeorgian.ttf
+#fonts/DroidSansHebrew-Bold.ttf
+#fonts/DroidSansHebrew-Regular.ttf
+#fonts/DroidSansMono.ttf
+#fonts/DroidSansTamil-Bold.ttf
+#fonts/DroidSansTamil-Regular.ttf
+#fonts/DroidSansThai.ttf
+#fonts/DroidSerif-Bold.ttf
+#fonts/DroidSerif-BoldItalic.ttf
+#fonts/DroidSerif-Italic.ttf
+#fonts/DroidSerif-Regular.ttf
+#fonts/Lohit-Bengali.ttf
+#fonts/Lohit-Kannada.ttf
+#fonts/Lohit-Telugu.ttf
+#fonts/MTLmr3m.ttf
+#fonts/NanumGothic.ttf
+#fonts/Roboto-Bold.ttf
+#fonts/Roboto-BoldItalic.ttf
+#fonts/Roboto-Italic.ttf
+#fonts/Roboto-Light.ttf
+#fonts/Roboto-LightItalic.ttf
+#fonts/Roboto-Regular.ttf
+#fonts/Roboto-Thin.ttf
+#fonts/Roboto-ThinItalic.ttf
+#fonts/RobotoCondensed-Bold.ttf
+#fonts/RobotoCondensed-BoldItalic.ttf
+#fonts/RobotoCondensed-Italic.ttf
+#onts/RobotoCondensed-Regular.ttf
+#fonts/hkgcsh00d.ttf
 
+#Nog in copy-files.sh zetten.
 #./fonts/AdobeFonts/fonts/:
-fonts/AdobeFonts/fonts/AdobeHeitiStd-Regular.otf
-fonts/AdobeFonts/fonts/AdobeMingStd-Light.otf
-fonts/AdobeFonts/fonts/AdobeMyungjoStd-Medium.otf
-fonts/AdobeFonts/fonts/CourierStd-Bold.otf
-fonts/AdobeFonts/fonts/CourierStd-BoldOblique.otf
-fonts/AdobeFonts/fonts/CourierStd-Oblique.otf
-fonts/AdobeFonts/fonts/CourierStd.otf
-fonts/AdobeFonts/fonts/MinionPro-Bold.otf
-fonts/AdobeFonts/fonts/MinionPro-BoldIt.otf
-fonts/AdobeFonts/fonts/MinionPro-It.otf
-fonts/AdobeFonts/fonts/MinionPro-Regular.otf
-fonts/AdobeFonts/fonts/MyriadPro-Bold.otf
-fonts/AdobeFonts/fonts/MyriadPro-BoldIt.otf
-fonts/AdobeFonts/fonts/MyriadPro-It.otf
-fonts/AdobeFonts/fonts/MyriadPro-Regular.otf
-fonts/AdobeFonts/fonts/RyoGothicPlusN-Medium.otf
-fonts/AdobeFonts/fonts/SymbolStd.otf
+#fonts/AdobeFonts/fonts/AdobeHeitiStd-Regular.otf
+#fonts/AdobeFonts/fonts/AdobeMingStd-Light.otf
+#fonts/AdobeFonts/fonts/AdobeMyungjoStd-Medium.otf
+#fonts/AdobeFonts/fonts/CourierStd-Bold.otf
+#fonts/AdobeFonts/fonts/CourierStd-BoldOblique.otf
+#fonts/AdobeFonts/fonts/CourierStd-Oblique.otf
+#fonts/AdobeFonts/fonts/CourierStd.otf
+#fonts/AdobeFonts/fonts/MinionPro-Bold.otf
+#fonts/AdobeFonts/fonts/MinionPro-BoldIt.otf
+#fonts/AdobeFonts/fonts/MinionPro-It.otf
+#fonts/AdobeFonts/fonts/MinionPro-Regular.otf
+#fonts/AdobeFonts/fonts/MyriadPro-Bold.otf
+#fonts/AdobeFonts/fonts/MyriadPro-BoldIt.otf
+#fonts/AdobeFonts/fonts/MyriadPro-It.otf
+#fonts/AdobeFonts/fonts/MyriadPro-Regular.otf
+#fonts/AdobeFonts/fonts/RyoGothicPlusN-Medium.otf
+#fonts/AdobeFonts/fonts/SymbolStd.otf
 
+#Nog in copy-files.sh zetten.
 #./fonts/AdobeFonts/hyphenDicts/:
-fonts/AdobeFonts/hyphenDicts/hyph_de.dic
-fonts/AdobeFonts/hyphenDicts/hyph_en.dic
-fonts/AdobeFonts/hyphenDicts/hyph_es.dic
-fonts/AdobeFonts/hyphenDicts/hyph_fr.dic
-fonts/AdobeFonts/hyphenDicts/hyph_it.dic
-fonts/AdobeFonts/hyphenDicts/hyph_pt.dic
+#fonts/AdobeFonts/hyphenDicts/hyph_de.dic
+#fonts/AdobeFonts/hyphenDicts/hyph_en.dic
+#fonts/AdobeFonts/hyphenDicts/hyph_es.dic
+#fonts/AdobeFonts/hyphenDicts/hyph_fr.dic
+#fonts/AdobeFonts/hyphenDicts/hyph_it.dic
+#fonts/AdobeFonts/hyphenDicts/hyph_pt.dic
 
+#nog uit zoeken. Folder op desktop windows..
 #./framework/:
 #Removed *.odex files. Not needed in CM. CM will make most framework files.
 #am.jar
