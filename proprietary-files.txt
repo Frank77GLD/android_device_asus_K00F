@@ -290,7 +290,7 @@ etc/firmware/nvram_RK903_26M.cal
 etc/firmware/otp.bin.z77
 
 #./etc/firmware/Splendid:
-etc/firmware/Splendidetc/firmware/Splendid/asussplendid_config.xml
+etc/firmware/Splendid/asussplendid_config.xml
 
 #./etc/firmware/Splendid/LUT:
 etc/firmware/Splendid/LUT/LUT_C01.txt
