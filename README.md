@@ -12,4 +12,12 @@ To build the rom you would have to download the cm9 device tree first. I would s
 
 TO BUILD THE ROM:
 
-Start a terminal. cd in the workfolder. For me it is cd ICS Than run: . build/envsetup.sh Tnan run: lunch Tnan pick the right number. For me its 4 Its the one with the device name: full_K00F Than run: make -j2 otapackage 2>&1 | tee Asus-buildRom.log
+Start a terminal.
+
+cd in the workfolder. For me it is cd ICS
+
+Than run: . build/envsetup.sh
+
+Tnan run: lunch Tnan pick the right number. For me its 4 Its the one with the device name: full_K00F
+
+Than run: make -j2 otapackage 2>&1 | tee Asus-buildRom.log
