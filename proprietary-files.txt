@@ -38,7 +38,6 @@ bin/am
 bin/applypatch
 bin/asusrmdir.sh
 bin/asusrmdir1.sh
-bin/asusscreendict
 bin/atrace
 bin/awk
 bin/bmgr
@@ -234,9 +233,9 @@ etc/web_browsing.sh
 #klopt
 
 #./etc/bluetooth:
-etc/auto_pair_devlist.conf
-etc/bt_did.conf
-etc/bt_stack.conf
+etc/bluetooth/auto_pair_devlist.conf
+etc/bluetooth/bt_did.conf
+etc/bluetooth/bt_stack.conf
 #klopt
 
 #./etc/dhcpcd:
