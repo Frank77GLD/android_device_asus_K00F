@@ -11,6 +11,7 @@ To build the recovery you would have to download the device tree first. I would 
 for me its in ICS/device/asus/K00F ICS is my workfolder.
 
 TO BUILD THE RECOVERY:
+
 Start a terminal.
 cd in the workfolder. For me it is cd ICS
 Than run: . build/envsetup.sh
