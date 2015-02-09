@@ -1,7 +1,7 @@
 # android_device_asus_K00F
 ASUS MeMO Pad 10 (ME102A) K00F
 
-If you use my work than me!
+If you use my work than credit me!
 
 This is for building the rom.
 Its not working jet i think. Will need the modules added and other files in the right place.
