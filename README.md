@@ -13,10 +13,15 @@ for me its in ICS/device/asus/K00F ICS is my workfolder.
 TO BUILD THE RECOVERY:
 
 Start a terminal.
+
 cd in the workfolder. For me it is cd ICS
+
 Than run: . build/envsetup.sh
+
 Tnan run: lunch
+
 Tnan pick the right number. For me its 4 Its the one with the device name: full_K00F
+
 Than run: make -j2 recoveryimage 2>&1 | tee Asus-buildRecovery.log It will make a log file in the workfolder
 
 This will make a recovery.img
