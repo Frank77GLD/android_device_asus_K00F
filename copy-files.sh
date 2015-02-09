@@ -70,6 +70,18 @@ mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/vendor/pittpatt/models/reco
 mkdir -p ../../../device/$VENDOR/$DEVICE/proprietary/xbin
 
 cp -a src/lib/libril.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/libril.so
+cp -a src/bin/am ../../../device/$VENDOR/$DEVICE/proprietary/bin/am
+cp -a src/bin/abcc ../../../device/$VENDOR/$DEVICE/proprietary/bin/abcc
+cp -a src/bin/applypatch ../../../device/$VENDOR/$DEVICE/proprietary/bin/applypatch
+cp -a src/bin/asusrmdir.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/asusrmdir.sh
+cp -a src/bin/asusrmdir1.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/asusrmdir1.sh
+cp -a src/bin/atrace ../../../device/$VENDOR/$DEVICE/proprietary/bin/atrace
+cp -a src/bin/awk ../../../device/$VENDOR/$DEVICE/proprietary/bin/awk
+cp -a src/bin/bmgr ../../../device/$VENDOR/$DEVICE/proprietary/bin/bmgr
+cp -a src/bin/bootanimation ../../../device/$VENDOR/$DEVICE/proprietary/bin/bootanimation
+cp -a src/bin/brcm_patchram_plus ../../../device/$VENDOR/$DEVICE/proprietary/bin/brcm_patchram_plus
+cp -a src/bin/bu ../../../device/$VENDOR/$DEVICE/proprietary/bin/bu
+cp -a src/bin/dd ../../../device/$VENDOR/$DEVICE/proprietary/bin/dd
 cp -a src/bin/bugmailer.sh ../../../device/$VENDOR/$DEVICE/proprietary/bin/bugmailer.sh
 cp -a src/bin/busybox ../../../device/$VENDOR/$DEVICE/proprietary/bin/busybox
 cp -a src/bin/cat ../../../device/$VENDOR/$DEVICE/proprietary/bin/cat
