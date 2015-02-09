@@ -321,6 +321,7 @@ etc/firmware/Splendid/LUT/LUT_W10.txt
 etc/firmware/rtlbt/rtlbt_config
 etc/firmware/rtlbt/rtlbt_fw
 
+#nakijken. Moet naar device.*.mk
 #15 permission files in stock.
 #in cm:
 #android.software.sip.voip.xml
@@ -338,7 +339,7 @@ etc/permissions/asus.hardware.sound.maxxaudio.xml
 etc/permissions/com.android.location.provider.xml
 etc/permissions/com.asus.ui.xml
 #etc/permissions/com.google.android.maps.xml
-etc/permissions/com.google.android.media.effects.xml
+#etc/permissions/com.google.android.media.effects.xml
 #etc/permissions/com.google.widevine.software.drm.xml
 #platform.xml
 etc/permissions/rk-camera-front.xml
@@ -740,40 +741,41 @@ etc/wifi/wpa_supplicant.conf
 #android.policy.jar
 #android.test.runner.jar
 #apache-xml.jar
-#asus-ui.jar
+framework/asus-ui.jar
 #bmgr.jar
 #bouncycastle.jar
 #bu.jar
 ##com.android.future.usb.accessory.jar
 #com.android.location.provider.jar
+#De 3 hier onder zijn van gapps!
 #com.google.android.maps.jar
 #com.google.android.media.effects.jar
 #com.google.widevine.software.drm.jar
-#content.jar
+framework/content.jar
 #core-junit.jar
 #core.jar
 #ext.jar
+#filterfw.jar made bij cm?
 #framework-res.apk
 #framework.jar
-#framework.odex
 #ime.jar
 #input.jar
 #javax.obex.jar
-#mms-common.jar
+framework/mms-common.jar
 #monkey.jar
 #pm.jar
-#requestsync.jar
+framework/requestsync.jar
 ##send_bug.jar
 #services.jar
 #settings.jar
 #svc.jar
-#telephony-common.jar
-#uiautomator.jar
+framework/telephony-common.jar
+framework/uiautomator.jar
 
-#nakijken lib*
+#>>>> nakijken lib* na lib/libandroid.so of ze wel in copy-files.sh zitten
 #./lib/:
-lib/lib/crtbegin_so.o
-lib/lib/crtend_so.o
+lib/crtbegin_so.o
+lib/crtend_so.o
 lib/libAndroidExport.so
 lib/libAppDataSearch.so
 lib/libCxImageKRF.so
@@ -858,7 +860,7 @@ lib/libdummy.so
 lib/libemoji_asus_24.so
 lib/libemoji_asus_106.so
 lib/libemoji_asus_120.so
-lib/libemoji_asu46+s_24.so
+lib/libemoji_asus_24.so
 lib/libemoji_asus_30.so
 lib/libemoji_asus_36.so
 lib/libemoji_asus_46.so
@@ -953,7 +955,7 @@ lib/libpatts_engine_jni_api.so
 lib/libperformance_runtime.so
 lib/libpixelflinger.so
 lib/libplus_jni_v8.so
-## vergelijk cm file hernoemen? lib/libpngKRF.so
+lib/libpngKRF.so
 lib/libportable.so
 #lib/libpower.so
 #lib/libpowermanager.so
@@ -1129,7 +1131,7 @@ lib/ssl/engines/libkeystore.so
 #in cm media/LMprec_508.emd
 #in cm media/PFFprec_600.emd
 #in cm media/bootanimation.zip
-#media/bootanimation_forreset.zip
+media/bootanimation_forreset.zip
 
 #./media/audio/alarms/:
 #Will use cm audio.
@@ -1160,18 +1162,18 @@ scripts/monkey/timer
 
 #In cm9
 #./tts/lang_pico/:
-tts/lang_pico/de-DE_gl0_sg.bin
-tts/lang_pico/de-DE_ta.bin
-tts/lang_pico/en-GB_kh0_sg.bin
-tts/lang_pico/en-GB_ta.bin
-tts/lang_pico/en-US_lh0_sg.bin
-tts/lang_pico/en-US_ta.bin
-tts/lang_pico/es-ES_ta.bin
-tts/lang_pico/es-ES_zl0_sg.bin
-tts/lang_pico/fr-FR_nk0_sg.bin
-tts/lang_pico/fr-FR_ta.bin
-tts/lang_pico/it-IT_cm0_sg.bin
-tts/lang_pico/it-IT_ta.bin
+#tts/lang_pico/de-DE_gl0_sg.bin
+#tts/lang_pico/de-DE_ta.bin
+#tts/lang_pico/en-GB_kh0_sg.bin
+#tts/lang_pico/en-GB_ta.bin
+#tts/lang_pico/en-US_lh0_sg.bin
+#tts/lang_pico/en-US_ta.bin
+#tts/lang_pico/es-ES_ta.bin
+#tts/lang_pico/es-ES_zl0_sg.bin
+#tts/lang_pico/fr-FR_nk0_sg.bin
+#tts/lang_pico/fr-FR_ta.bin
+#tts/lang_pico/it-IT_cm0_sg.bin
+#tts/lang_pico/it-IT_ta.bin
 
 #./usr/icu/:
 # in cm usr/icu/icudt48l.dat
