@@ -301,7 +301,7 @@ cp -a src/etc/firmware/nvram_GB86302I.txt ../../../device/$VENDOR/$DEVICE/propri
 cp -a src/etc/firmware/nvram_RK901.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK901.txt
 cp -a src/etc/firmware/nvram_RK903.cal ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903.cal
 cp -a src/etc/firmware/nvram_RK903.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903.txt
-cp -a src/etc/firmware/nvram_RK903.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903.txt
+cp -a src/etc/firmware/nvram_RK903_26M.cal ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/nvram_RK903_26M.cal
 cp -a src/etc/firmware/otp.bin.z77 ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/otp.bin.z77
 cp -a src/etc/firmware/RT2870AP.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT2870AP.dat
 cp -a src/etc/firmware/RT2870APCard.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT2870APCard.dat
@@ -310,8 +310,8 @@ cp -a src/etc/firmware/RT2870STACard.dat ../../../device/$VENDOR/$DEVICE/proprie
 cp -a src/etc/firmware/RT5370AP.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT5370AP.dat
 cp -a src/etc/firmware/RT5370STA.dat ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/RT5370STA.dat
 cp -a src/etc/firmware/WIFI_RAM_CODE ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/WIFI_RAM_CODE
-cp -a src/etc/firmware/rtlbt/rtlbt_config ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_config
-cp -a src/etc/firmware/rtlbt/rtlbt_fw ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt_fw
+cp -a src/etc/firmware/rtlbt/rtlbt_config ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt/rtlbt_config
+cp -a src/etc/firmware/rtlbt/rtlbt_fw ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/rtlbt/rtlbt_fw
 cp -a src/etc/firmware/Splendid/asussplendid_config.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/asussplendid_config.xml
 cp -a src/etc/firmware/Splendid/LUT/LUT_C01.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C01.txt
 cp -a src/etc/firmware/Splendid/LUT/LUT_C02.txt ../../../device/$VENDOR/$DEVICE/proprietary/etc/firmware/Splendid/LUT/LUT_C02.txt
@@ -347,7 +347,6 @@ cp -a src/etc/permissions/com.asus.ui.xml ../../../device/$VENDOR/$DEVICE/propri
 cp -a src/etc/permissions/com.google.android.maps.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.google.android.maps.xml
 cp -a src/etc/permissions/com.google.android.media.effects.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.google.android.media.effects.xml
 cp -a src/etc/permissions/com.google.widevine.software.drm.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/com.google.widevine.software.drm.xml
-cp -a src/etc/permissions/platform.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/platform.xml
 cp -a src/etc/permissions/rk-camera.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-camera.xml
 cp -a src/etc/permissions/rk-camera-front.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-camera-front.xml
 cp -a src/etc/permissions/rk-core.xml ../../../device/$VENDOR/$DEVICE/proprietary/etc/permissions/rk-core.xml
@@ -534,6 +533,7 @@ cp -a src/lib/librs.antblur_drama.so ../../../device/$VENDOR/$DEVICE/proprietary
 cp -a src/lib/librs.drama.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs.drama.so
 cp -a src/lib/librs.film_base.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs.film_base.so
 cp -a src/lib/librs.fixedframe.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs.fixedframe.so
+cp -a src/lib/librs.grey.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs.grey.so
 cp -a src/lib/librs.image_wrapper.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs.image_wrapper.so
 cp -a src/lib/librs.retrolux.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librs.retrolux.so
 cp -a src/lib/librsjni.so ../../../device/$VENDOR/$DEVICE/proprietary/lib/librsjni.so
@@ -716,11 +716,11 @@ cp -a src/usr/srec/en-US/endpointer_voicesearch.config ../../../device/$VENDOR/$
 cp -a src/usr/srec/en-US/ep_acoustic_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/ep_acoustic_model
 cp -a src/usr/srec/en-US/g2p_fst ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/g2p_fst
 cp -a src/usr/srec/en-US/google_hotword.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword.config
-cp -a src/usr/srec/en-US/google_hotword.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword.config
+cp -a src/usr/srec/en-US/google_hotword_clg ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword_clg
 cp -a src/usr/srec/en-US/google_hotword_logistic ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/google_hotword_logistic
 cp -a src/usr/srec/en-US/grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/grammar.config
-cp -a src/usr/srec/en-US/grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/grammar.config
-cp -a src/usr/srec/en-US/grammar.config ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/grammar.config
+cp -a src/usr/srec/en-US/hmmsyms ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/hmmsyms
+cp -a src/usr/srec/en-US/hotword_symbols ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/hotword_symbols
 cp -a src/usr/srec/en-US/lintrans_model ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/lintrans_model
 cp -a src/usr/srec/en-US/metadata ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/metadata
 cp -a src/usr/srec/en-US/normalizer ../../../device/$VENDOR/$DEVICE/proprietary/usr/srec/en-US/normalizer
@@ -740,6 +740,7 @@ cp -a src/usr/xt9/databases/kdb/chinese.cangjie.xml ../../../device/$VENDOR/$DEV
 cp -a src/usr/xt9/databases/kdb/chinese.pinyin.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/chinese.pinyin.xml
 cp -a src/usr/xt9/databases/kdb/chinese.stroke.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/chinese.stroke.xml
 cp -a src/usr/xt9/databases/kdb/phone.azerty.french.center.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.azerty.french.center.xml
+cp -a src/usr/xt9/databases/kdb/phone.chinese.bopomofo.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.bopomofo.xml
 cp -a src/usr/xt9/databases/kdb/phone.chinese.cangjie.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.cangjie.xml
 cp -a src/usr/xt9/databases/kdb/phone.chinese.pinyin.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.pinyin.xml
 cp -a src/usr/xt9/databases/kdb/phone.chinese.stroke.xml ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/kdb/phone.chinese.stroke.xml
@@ -826,6 +827,7 @@ cp -a src/usr/xt9/databases/mdb/EN.txt ../../../device/$VENDOR/$DEVICE/proprieta
 cp -a src/usr/xt9/databases/mdb/ES.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/ES.txt
 cp -a src/usr/xt9/databases/mdb/FR.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/FR.txt
 cp -a src/usr/xt9/databases/mdb/IT.txt ../../../device/$VENDOR/$DEVICE/proprietary/usr/xt9/databases/mdb/IT.txt
+cp -a src/vendor/etc/fallback_fonts.xml ../../../device/$VENDOR/$DEVICE/proprietary/vendor/etc/fallback_fonts.xml
 cp -a src/vendor/firmware/bcm2076b1.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm2076b1.hcd
 cp -a src/vendor/firmware/bcm4329.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm4329.hcd
 cp -a src/vendor/firmware/bcm20710a1.hcd ../../../device/$VENDOR/$DEVICE/proprietary/vendor/firmware/bcm20710a1.hcd
