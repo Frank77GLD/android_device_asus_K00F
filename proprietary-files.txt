@@ -329,10 +329,10 @@ etc/firmware/rtlbt/rtlbt_fw
 #com.tmobile.software.themes.xml
 #platform.xml
 #./etc/permissions/:
-etc/permissions/android.hardware.location.gps.xml
-etc/permissions/android.hardware.location.xml
-etc/permissions/android.hardware.sensor.compass.xml
-etc/permissions/android.hardware.wifi.direct.xml
+# in cm etc/permissions/android.hardware.location.gps.xml
+# in cm etc/permissions/android.hardware.location.xml
+# in cm etc/permissions/android.hardware.sensor.compass.xml
+# in cm etc/permissions/android.hardware.wifi.direct.xml
 etc/permissions/android.software.live_wallpaper.xml
 etc/permissions/asus.hardware.sound.maxxaudio.xml
 etc/permissions/com.android.location.provider.xml
@@ -340,7 +340,7 @@ etc/permissions/com.asus.ui.xml
 #etc/permissions/com.google.android.maps.xml
 #etc/permissions/com.google.android.media.effects.xml
 #etc/permissions/com.google.widevine.software.drm.xml
-#platform.xml
+#etc/platform.xml
 etc/permissions/rk-camera-front.xml
 etc/permissions/rk-camera.xml
 etc/permissions/rk-core.xml
@@ -746,7 +746,7 @@ framework/asus-ui.jar
 #bu.jar
 ##com.android.future.usb.accessory.jar
 #com.android.location.provider.jar
-#De 3 hier onder zijn van gapps!
+#The 3 under here are in gapps!
 #com.google.android.maps.jar
 #com.google.android.media.effects.jar
 #com.google.widevine.software.drm.jar
@@ -781,7 +781,7 @@ lib/libCxImageKRF.so
 lib/libEGL.so
 lib/libETC1.so
 lib/libFFTEm.so
-lib/lib/libGLES_trace.so
+lib/libGLES_trace.so
 lib/libGLESv1_CM.so
 lib/libGLESv2.so
 lib/libImageEffects.so
@@ -973,7 +973,7 @@ lib/libreference-ril-u5501.so
 lib/libreference-ril-u7501.so
 lib/libreference-ril.so
 lib/libril-rk29-dataonly.so
-#lib/libril.so
+lib/libril.so
 lib/libril3.so
 lib/librkmediaconfig.so
 lib/librkswscale.so
@@ -1070,7 +1070,7 @@ lib/registry
 #in cm lib/drm/libfwdlockengine.so
 
 #./lib/egl/:
-egl.cfg
+lib/egl/egl.cfg
 lib/egl/libEGL_mali.so
 #lib/egl/libGLES_android.so
 lib/egl/libGLESv1_CM_mali.so
