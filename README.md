@@ -8,6 +8,13 @@ Its not working jet i think. Will need the modules added and other files in the 
 This will build a cm9 rom cose thats what i have on my laptop here. Cm10.2, cm11 and cm12 will be done some time later.
 Kernel file missing for now.
 
+Making the vendor files (proprietary-files):
+in ICS/device/asus/K00F/src i did put all the files i got from the ota system.img
+
+cd into ICS/device/asus/K00F (with a terminal)
+Than run: . copy-files.sh
+The folder proprietary will be made in ICS/device/asus/K00F
+
 To build the rom you would have to download the cm9 device tree first. I would sugest to just download the device tree as a zip file. You need to be logged in to do that i think. Put the device tree files in: device/asus/K00F folder for me its in ICS/device/asus/K00F ICS is my workfolder.
 
 TO BUILD THE ROM:
