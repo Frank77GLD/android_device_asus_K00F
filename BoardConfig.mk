@@ -142,7 +142,7 @@ BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/mtd/by-name/user
 # Avoid the generation of ldrcc instructions
 #NEED_WORKAROUND_CORTEX_A9_745320 := true
 
-# 21 jan
-#BOARD_HAS_NO_SELECT_BUTTON := true
+# 11 feb
+BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
