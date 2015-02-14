@@ -8,8 +8,10 @@ HOST_JDK_IS_64BIT_VERSION := true
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := rk30xx
-#TARGET_BOARD_HARDWARE := rk3188
+TARGET_BOARD_PLATFORM := rk3188
+TARGET_BOARD_HARDWARE := rk3188
+TARGET_BOARD_PLATFORM_GPU := mali400
+#TARGET_BOARD_PLATFORM := rk30xx
 TARGET_CPU_ABI := armeabi
 TARGET_BOOTLOADER_BOARD_NAME := K00F
 TARGET_CPU_ABI := armeabi-v7a
@@ -18,11 +20,12 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 #TARGET_ARCH_VARIANT_FPU := neon
 #TARGET_ARCH_VARIANT_FPU := vfpv3-d16
-TARGET_CPU_VARIANT := cortex-a9
+#TARGET_CPU_VARIANT := cortex-a9
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HAVE_NEON := true
 ARCH_ARM_HAVE_VFP := true
+#ARCH_ARM_HAVE_ARMV7A := true
 #TARGET_BOOTLOADER_BOARD_NAME := rk31board
 
 #android-info.txt Werkt nog niet.
@@ -78,6 +81,9 @@ TARGET_PREBUILT_KERNEL := device/asus/K00F/kernel
 #BOARD_UMS_2ND_LUNFILE := /sys/class/android_usb/android0/f_mass_storage/lun1/file
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
+#if board only 512M ddr, set true, esle false
+BOARD_USE_LOW_MEM := false
+
 #HDMI
 TARGET_HAVE_HDMI_OUT := false
 BOARD_USES_HDMI := false
@@ -116,6 +122,11 @@ ro.debuggable=1
 #BLUETOOTH
 BOARD_HAVE_BLUETOOTH := true
 
+# Releasetools:
+#TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/asus/K00F/releasetools/rk3188_ota_from_target_files
+#TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/asus/K00F/releasetools/rk3188_img_from_target_files
+#TARGET_CUSTOM_RELEASETOOL := ./device/asus/K00F/releasetools/squisher
+
 # Graphics
 USE_OPENGL_RENDERER := true
 #Enable egl.cfg later when the prop files are ready
@@ -124,6 +135,8 @@ USE_OPENGL_RENDERER := true
 #BOARD_EGL_CFG := $(LOCAL_PATH)/egl.cfg
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
+# readahead files to improve boot time
+BOARD_BOOT_READAHEAD := true
 #DEVICE_RESOLUTION := 1024x768
 TARGET_RECOVERY_FSTAB = device/asus/K00F/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
@@ -142,7 +155,7 @@ BOARD_SDCARD_DEVICE_INTERNAL := /dev/block/mtd/by-name/user
 # Avoid the generation of ldrcc instructions
 #NEED_WORKAROUND_CORTEX_A9_745320 := true
 
-# 11 feb
+# 11 feb.
 BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
