@@ -222,6 +222,18 @@ device/asus/K00F/prebuild/platform.xml:system/etc/permissions/platform.xml
 
 PRODUCT_CHARACTERISTICS := tablet,sdcard
 
+# Copy prebuilt usb_modeswitch.d files
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,device/asus/K00F/prebuild/etc/usb_modeswitch.d,system/etc/usb_modeswitch.d)
+
+# copy rktools
+PRODUCT_COPY_FILES += \
+$(call find-copy-subdir-files,*,device/asus/K00F/rktools,rktools)
+
+# copy the builder
+PRODUCT_COPY_FILES += \
+device/asus/K00F/custom_boot.sh:custom_boot.sh
+
 # Audio big:
 #look ad: https://github.com/xplodwild/android_device_asus_tf300t
 PRODUCT_PACKAGES += \
@@ -263,6 +275,11 @@ static_busybox \
 utility_make_ext4fs \
 libstagefrighthw
 
+# Charger
+PRODUCT_PACKAGES += \
+charger \
+charger_res_images \
+
 # Graphics
 #PRODUCT_PACKAGES += \
 #librs_jni
@@ -284,6 +301,43 @@ libOmxVenc \
 libOmxCore \
 libstagefrighthw \
 libc2dcolorconvert
+
+# Fix for dalvik-cache
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.dexopt-data-only=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.contact.simtype=0 \
+ro.additionalbutton.operation=0 \
+ro.build.asus.version.pensdk=1 \
+ro.setupwizard.mode=OPTIONAL \
+ro.com.google.gmsversion=4.2_r3 \
+ro.com.google.clientidbase=android-asus-rev \
+ro.com.google.clientidbase.ms=android-asus-rev \
+ro.com.google.clientidbase.am=android-asus-rev \
+ro.com.google.clientidbase.gmm=android-asus-rev \
+ro.com.google.clientidbase.yt=android-asus-rev \
+ro.carrier=wifi-only \
+dalvik.vm.heapstartsize=8m \
+dalvik.vm.heapgrowthlimit=64m \
+dalvik.vm.heapsize=384m \
+dalvik.vm.heaptargetutilization=0.75 \
+dalvik.vm.heapminfree=512k \
+dalvik.vm.heapmaxfree=8m \
+ro.sf.lcdc_composer=0 \
+wifi.version.driver=v4.2.4_9322 \
+keyguard.no_require_sim=true \
+ro.com.android.dataroaming=false \
+ro.sf.fakerotation=false \
+ro.sf.hwrotation=0 \
+wifi.interface=wlan0 \
+ro.tether.denied=false \
+ro.sf.lcd_density=160 \
+wifi.supplicant_scan_interval=15 \
+ro.kernel.android.checkjni=0 \
+dalvik.vm.dexopt-flags=m=y \
+ro.config.hwrlib=T9_arm \
+ro.config.xt9ime.max_subtype=7
 
 #OMX files. Welke nemen?
 #https://github.com/steven676/android_device_bn_encore/blob/cm-10.2/encore.mk
